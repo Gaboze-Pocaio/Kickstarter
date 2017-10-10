@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gameboy Zero - Handheld Edition</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <style>
+            body
+            {
+                display:flex;
+                width:100vw;
+                height:100vh;
+                margin:0;
+                padding:0;
+            }
+            .progress
+            {
+                position:fixed;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                background:#FFFFFF url(./assets/loader.gif) no-repeat center;
+                background-size: 25%;
+                z-index:2;
+                opacity: 1;
+            }
+
+            .logo
+            {
+                position:fixed;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                bottom:0;
+                left:0;
+                right:0;
+                height:100px;
+                background:#FFFFFF url(./assets/logo.jpg) no-repeat center;
+                background-size: 164px;
+                z-index:2;
+                opacity: 1;
+            }
+
+            .container
+            {
+                position:fixed;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                z-index:1;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container"></div>
+        <div class="progress"></div>
+        <div class="logo"></div>
+
+        <script src="plugins/three.js"></script>
+        <script src="plugins/ColladaLoader2.js"></script>
+        <script src="plugins/HorizontalBlurShader.js"></script>
+        <script src="plugins/Detector.js"></script>
+
+        <script>
+            if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+
+            var container, laoder, clock, interval;
+            var camera, scene, renderer, dot;
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+
+            var group;
+
+            var ty = 0;
+            var tyomd = 0;
+
+            var tx = 0;
+            var txomd = 0;
+
+            var mx = 0;
+            var mxomd = 0;
+
+            var my = 0;
+            var myomd = 0;
+
+            var dx = w / 2;
+            var dy = h / 2;
+
+            init();
+            animate();
+
+            function init() {
+
+                container = document.querySelector( '.container' );
+                progress = document.querySelector( '.progress' );
+
+                camera = new THREE.PerspectiveCamera( 45, w / h, 1, 10000 );
+                camera.position.set( 0, 25, 10 );
+                camera.lookAt( new THREE.Vector3( 0, 0, 0 ) );
+
+                scene = new THREE.Scene();
+                group = new THREE.Group();
+                group.position.y = 50;
+                scene.add( group );
+
+                // loading manager
+
+                var loadingManager = new THREE.LoadingManager( function() {
+
+                    scene.add( dot );
+
+                } );
+
+                // collada
+
+                var loader = new THREE.ColladaLoader( loadingManager );
+                loader.options.convertUpAxis = true;
+                loader.load(
+                    './assets/gameboy.dae',
+                    function ( collada ) {
+                        dot = collada.scene;
+                        dot.scale.x = dot.scale.y = dot.scale.z = 0.005;
+                        dot.updateMatrix();
+                        dot.material = new THREE.MeshLambertMaterial({
+                            color: 0x5c5c5c,
+                            emissive: 0x000000,
+                            shading: THREE.FlatShading,
+                            transparent: true,
+                            opacity: 1,
+                            uniforms: THREE.UniformsUtils.clone( THREE.HorizontalBlurShader.uniforms ),
+                            vertexShader: THREE.HorizontalBlurShader.vertexShader,
+                            fragmentShader: THREE.HorizontalBlurShader.fragmentShader
+                        });
+                        collada.scene.traverse( function ( child ) {if ( child instanceof THREE.Mesh ) {
+                            if (typeof(child.material[0]) !== 'undefined')
+                            {
+                              if(child.material[0]['name'] === 'material_0')
+                              {
+                                child.material = new THREE.MeshLambertMaterial({color:0x666666, transparent: true, opacity: 0.75});
+                              }
+                            }
+                        }} );
+                        interval = setInterval(function(){
+                            var opacity = getComputedStyle(progress).getPropertyValue('opacity');
+                            if(opacity > 0)
+                            {
+                                //getComputedStyle(progress).getPropertyValue('opacity') -=0.01;
+                                progress.style.opacity = opacity - 0.025;
+                            }
+                            else
+                            {
+                                clearInterval(interval);
+                            }
+                        },10);
+                        scene.add( dot );
+                    } ,
+                    function ( xhr ) {
+
+                    }
+                );
+
+                //
+
+                var ambientLight = new THREE.AmbientLight( 0xFFFFFF, 1 );
+                scene.add( ambientLight );
+
+                var directionalLight = new THREE.DirectionalLight( 0xFFFFFF, 1 );
+                directionalLight.position.set( 1, 1, 0 ).normalize();
+                scene.add( directionalLight );
+
+                //
+
+                renderer = new THREE.WebGLRenderer({alpha: true});
+                renderer.setPixelRatio( window.devicePixelRatio );
+                renderer.setSize( w, h );
+                renderer.setClearColor( 0xCCCCCC );
+                container.appendChild( renderer.domElement );
+
+                //
+
+
+                //
+
+                document.addEventListener( 'mousedown', onDocumentMouseDown, false );
+                document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+                document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+
+                //
+
+                window.addEventListener( 'resize', onWindowResize, false );
+
+            }
+
+            function onWindowResize() {
+
+                dx = window.innerWidth / 2;
+                dy = window.innerHeight / 2;
+
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+
+                renderer.setSize( window.innerWidth, window.innerHeight );
+
+            }
+
+            //
+
+            function onDocumentMouseDown( event ) {
+
+                event.preventDefault();
+
+                document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+                document.addEventListener( 'mouseup', onDocumentMouseUp, false );
+                document.addEventListener( 'mouseout', onDocumentMouseOut, false );
+
+                mxomd = event.clientX - dx;
+                tyomd = ty;
+
+                myomd = event.clientY - dy;
+                txomd = tx;
+
+            }
+
+            function onDocumentMouseMove( event ) {
+
+                mx = event.clientX - dx;
+                ty = tyomd + ( mx - mxomd ) * 0.02;
+
+                my = event.clientY - dy;
+                tx = tyomd + ( my - myomd ) * 0.02;
+
+            }
+
+            function onDocumentMouseUp( event ) {
+
+                document.removeEventListener( 'mousemove', onDocumentMouseMove, false );
+                document.removeEventListener( 'mouseup', onDocumentMouseUp, false );
+                document.removeEventListener( 'mouseout', onDocumentMouseOut, false );
+
+            }
+
+            function onDocumentMouseOut( event ) {
+
+                document.removeEventListener( 'mousemove', onDocumentMouseMove, false );
+                document.removeEventListener( 'mouseup', onDocumentMouseUp, false );
+                document.removeEventListener( 'mouseout', onDocumentMouseOut, false );
+
+            }
+
+            function onDocumentTouchStart( event ) {
+
+                if ( event.touches.length == 1 ) {
+
+                    event.preventDefault();
+
+                    mxomd = event.touches[ 0 ].pageX - dx;
+                    tyomd = ty;
+
+                    myomd = event.touches[ 0 ].pageY - dy;
+                    txomd = tx;
+
+                }
+
+            }
+
+            function onDocumentTouchMove( event ) {
+
+                if ( event.touches.length == 1 ) {
+
+                    event.preventDefault();
+
+                    mx = event.touches[ 0 ].pageX - dx;
+                    ty = tyomd + ( mx - mxomd ) * 0.005;
+
+                    my = event.touches[ 0 ].pageY - dy;
+                    tx = tyomd + ( my - myomd ) * 0.005;
+
+                }
+
+            }
+
+            //
+
+            function animate() {
+
+                requestAnimationFrame( animate );
+
+                render();
+
+            }
+
+            function render() {
+                var axis = 'y';
+                if(ty)
+                {
+                    group.rotation.y += ( ty - group.rotation.y ) * 0.05;
+                    dot.rotation.y = group.rotation.y;
+                }
+                if(tx)
+                {
+                    group.rotation.x += ( tx - group.rotation.x ) * 0.05;
+                    dot.rotation.x = group.rotation.x;
+                }
+                renderer.render( scene, camera );
+            }
+
+        </script>
+    </body>
+</html>
