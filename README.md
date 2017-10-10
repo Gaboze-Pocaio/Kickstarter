@@ -8,7 +8,7 @@
 
 |                                          |                                          |
 | ---------------------------------------- | ---------------------------------------- |
-| <img src="images/gameboyzero-logo.jpg" height="100" align="left"> | <img src="images/kickstarter-logo.png" height="100" align="right"> |
+| <img src="images/gameboyzero-logo.jpg" width="50%" align="left"> | <img src="images/kickstarter-logo.png" width="50%" align="right"> |
 
 ## Introduction
 
