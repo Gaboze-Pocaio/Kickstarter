@@ -61,7 +61,7 @@ $ brew install imagemagick
 
 # convert (replace with your file names and outputs)
 # ex: convert "gameboyzero-top.jpg" -depth 1 -monochrome -colors 2 "gameboyzero-top.bmp"
-$ convert "[jpg to convert]"  1 -monochrome -colors 2 "[bmp to output]"
+$ convert "[jpg to convert]"  depth 1 -monochrome -colors 2 "[bmp to output]"
 ```
 
 #### Import bmp in Eagle CAD.
@@ -70,7 +70,7 @@ $ convert "[jpg to convert]"  1 -monochrome -colors 2 "[bmp to output]"
 * place it on layer 200
 * hide all your layers except 200
 * select everything
-* change group to layer 20 (tPlace) or 21 (bPlace)
+* change group to layer 21 (tPlace) or 22 (bPlace)
 * move group *(if needed)*
 
 ## Custom Config
