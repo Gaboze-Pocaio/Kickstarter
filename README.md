@@ -27,7 +27,7 @@ Raspberry Pi Zero based arcade in you pocket
 The boards have been tested with the following platforms:
 
 - [x] [Emulation Station](http://www.emulationstation.org/)
-- [x] [Lakka](http://www.lakka.tv/)
+- [ ] [Lakka](http://www.lakka.tv/)
 - [x] [RetroPie](https://retropie.org.uk/)
 
 Other platforms are yet to be tested.
