@@ -13,6 +13,7 @@
                 height:100vh;
                 margin:0;
                 padding:0;
+                font-family:Helvetica;
             }
             .progress
             {
@@ -34,7 +35,7 @@
             {
                 position:fixed;
                 display:flex;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
                 bottom:0;
                 left:0;
@@ -44,6 +45,14 @@
                 background-size: 164px;
                 z-index:2;
                 opacity: 1;
+            }
+
+            .logo a
+            {
+                padding:10px;
+                background:rgba(0,0,0,1);
+                color:rgba(255,255,255,1);
+                text-decoration: none;
             }
 
             .container
@@ -61,7 +70,10 @@
 
         <div class="container"></div>
         <div class="progress"></div>
-        <div class="logo"></div>
+        <div class="logo">
+            <a href="?board">board</a>
+            <a href="?parts">parts</a>
+        </div>
 
         <script src="plugins/three.js"></script>
         <script src="plugins/ColladaLoader2.js"></script>
@@ -96,7 +108,7 @@
             init();
             animate();
 
-            function init() {
+            function init(model = location.search.slice(1) || 'board') {
 
                 container = document.querySelector( '.container' );
                 progress = document.querySelector( '.progress' );
@@ -119,11 +131,15 @@
                 } );
 
                 // collada
+                var models = {
+                    board: './assets/gameboy.dae',
+                    parts: './assets/gameboy-parts.dae'
+                }
 
                 var loader = new THREE.ColladaLoader( loadingManager );
                 loader.options.convertUpAxis = true;
                 loader.load(
-                    './assets/gameboy.dae',
+                    models[model],
                     function ( collada ) {
                         dot = collada.scene;
                         dot.scale.x = dot.scale.y = dot.scale.z = 0.005;
@@ -141,7 +157,8 @@
                         collada.scene.traverse( function ( child ) {if ( child instanceof THREE.Mesh ) {
                             if (typeof(child.material[0]) !== 'undefined')
                             {
-                              if(child.material[0]['name'] === 'material_0')
+                                console.log(child.material[0]['name'])
+                              if(child.material[0]['name'] === 'material')
                               {
                                 child.material = new THREE.MeshLambertMaterial({color:0x666666, transparent: true, opacity: 0.75});
                               }
@@ -168,10 +185,10 @@
 
                 //
 
-                var ambientLight = new THREE.AmbientLight( 0xCCCCCC, 1 );
+                var ambientLight = new THREE.AmbientLight( 0xCCCCCC, 0.85 );
                 scene.add( ambientLight );
 
-                var directionalLight = new THREE.DirectionalLight( 0xCCCCCC, 1 );
+                var directionalLight = new THREE.DirectionalLight( 0xCCCCCC, 0.85 );
                 directionalLight.position.set( 1, 1, 0 ).normalize();
                 scene.add( directionalLight );
 
