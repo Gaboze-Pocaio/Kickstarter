@@ -1,16 +1,24 @@
-# Gameboy Zero
+# Game Boy Zero
 
 > Looking for a no frills multi system emulator that fits in your pocket? Look no further! This is it, Gameboy Zero - Handheld Edition!!!
+>
 > This project is a collaboration between  [moosepr](https://github.com/moosepr/) and  [32teeth](https://github.com/32teeth)
+>
 > We are **live** on [KickStarter](https://www.kickstarter.com/projects/sparky/gameboy-zero-handheld-edition)
-> Thank you everyone for your support.
+>
+> **Thank you everyone for your support.**
 
 
 
 
 
-<img src="images/gameboyzero-logo.jpg" width="50%" align="left">
-<img src="images/kickstarter-logo.png" width="50%" align="right">
+<img src="images/gameboyzero-logo.png" width="75%">
+
+
+
+<img src="images/kickstarter-logo.png" width="25%">
+
+
 
 
 
@@ -60,9 +68,10 @@ With our project we have included a few custom Eagle CAD Libraries
 
 ## Details
 
-| Screen Size | Version | Top                                      | Bottom                                   |
-| ----------- | ------- | ---------------------------------------- | ---------------------------------------- |
-| 2.8"        | Pi Zero | <img src="silks/gameboyzero-top.bmp" height="350"> | <img src="silks/gameboyzero-bottom.bmp" height="350"> |
+| Version         | Top                                      | Bottom                                   |
+| --------------- | ---------------------------------------- | ---------------------------------------- |
+| Flat Screen     | <img src="silks/gameboyzero-top.bmp" height="350"> | <img src="silks/gameboyzero-bottom.bmp" height="350"> |
+| Composite Board | <img src="images/eagleUp_gameboyzero_board_top.png" height="350"> | <img src="images/eagleUp_gameboyzero_board_bottom.png" height="350"> |
 
 
 
@@ -96,9 +105,9 @@ $ convert "[jpg to convert]"  depth 1 -monochrome -colors 2 "[bmp to output]"
 
 
 
-| Top                                      | Bottom                                   |
-| ---------------------------------------- | ---------------------------------------- |
-| <img src="images/eagle-import-top.png" width="50%" align="left"> | <img src="images/eagle-import-bottom.png" width="50%" align="right"> |
+| Top                                     | Bottom                                   |
+| --------------------------------------- | ---------------------------------------- |
+| <img src="images/eagle-import-top.png"> | <img src="images/eagle-import-bottom.png"> |
 
 
 
