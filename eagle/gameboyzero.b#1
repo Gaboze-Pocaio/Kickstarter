@@ -6881,6 +6881,7 @@
 <rectangle x1="65.5685" y1="86.70601875" x2="65.6531" y2="86.79058125" layer="22"/>
 <rectangle x1="65.9067" y1="86.70601875" x2="66.0758" y2="86.79058125" layer="22"/>
 <rectangle x1="65.9067" y1="86.79058125" x2="66.0758" y2="86.87511875" layer="22"/>
+<circle x="6" y="29" radius="1.25" width="0.01" layer="20"/>
 <circle x="67" y="34" radius="1.25" width="0.01" layer="20"/>
 <circle x="67" y="4" radius="1.25" width="0.01" layer="20"/>
 <circle x="4" y="4" radius="1.25" width="0.01" layer="20"/>
