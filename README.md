@@ -6,16 +6,25 @@
 > Thank you everyone for your support.
 
 
-|                                          |                                          |
-| ---------------------------------------- | ---------------------------------------- |
-| <img src="images/gameboyzero-logo.jpg" width="50%" align="left"> | <img src="images/kickstarter-logo.png" width="50%" align="right"> |
+
+
+
+<img src="images/gameboyzero-logo.jpg" width="50%" align="left">
+<img src="images/kickstarter-logo.png" width="50%" align="right">
+
+
+
+
 
 ## Introduction
 
 ### Gameboy Zero - Handheld Edition
 Raspberry Pi Zero based arcade in you pocket
 
+
+
 ### Features:
+
 * 2.8" TFT LCD
 * Gameboy button layout interface
 * Raspberry Pi Zero
@@ -23,7 +32,10 @@ Raspberry Pi Zero based arcade in you pocket
 * Shoulder / Trigger buttons
 * 60 frames per second display
 
+
+
 ### Platforms:
+
 The boards have been tested with the following platforms:
 
 - [x] [Emulation Station](http://www.emulationstation.org/)
@@ -31,6 +43,8 @@ The boards have been tested with the following platforms:
 - [x] [RetroPie](https://retropie.org.uk/)
 
 Other platforms are yet to be tested.
+
+
 
 
 
@@ -42,17 +56,22 @@ With our project we have included a few custom Eagle CAD Libraries
 * [Raspberry Pi Zero](/library/RPI-Zero.lbr)
 
 
+
+
 ## Details
 
 | Screen Size | Version | Top                                      | Bottom                                   |
 | ----------- | ------- | ---------------------------------------- | ---------------------------------------- |
 | 2.8"        | Pi Zero | <img src="silks/gameboyzero-top.bmp" height="350"> | <img src="silks/gameboyzero-bottom.bmp" height="350"> |
 
+
+
 ## Custom Silk Screen
+
 if you plan on changin the silk design,
 * use the [gameboyzero sketch](design/gameboyzero) file
 * all fonts required are in the  [fonts folder](fonts/)
-* export groups (either 'top' or 'bottom' as JPG)
+* export artboard (with either 'TOP' or 'BOTTOM' group active as JPG)
 
 *converting jpg to 2 color bitmap*
 ```shell
@@ -64,16 +83,46 @@ $ brew install imagemagick
 $ convert "[jpg to convert]"  depth 1 -monochrome -colors 2 "[bmp to output]"
 ```
 
+
+
 #### Import bmp in Eagle CAD.
-* change scale type to *mm*
-* change scale to *0.08455*
-* place it on layer 200
-* hide all your layers except 200
-* select everything
-* change group to layer 21 (tPlace) or 22 (bPlace)
-* move group *(if needed)*
+
+* File > Import > Bitmap
+* Select your bitmap
+* Select **only** black color
+* Change scale type to *mm*
+* Change scale to *0.08575*
+* Place it on layer layer 21 (tPlace) or 22 (bPlace)
+
+
+
+| Top                                      | Bottom                                   |
+| ---------------------------------------- | ---------------------------------------- |
+| <img src="images/eagle-import-top.png" width="50%" align="left"> | <img src="images/eagle-import-bottom.png" width="50%" align="right"> |
+
+
+
+## Plexi Case
+
+The design for the layered plexi case are in the [case folder](/case)
+
+*It consists of 5 layers:*
+* TOP (optional for screen protection)
+* SCREEN (fits over 2.8" TFT LCD)
+* PI ZERO (fits around the Raspberry Pi Zero and TF4056 Module)
+* BOTTOM (fits on top of the Raspberry Pi Zero)
+* BATTERY (this is the layer to hold the LiPo battery in place)
+
+
+
+<img src="case/gameboyzero-case.png">
+
+
+
+
 
 ## Custom Config
+
 > If you do not plan on using the provided Raspberry Pi image, simply [download](https://retropie.org.uk/download/) the latest RetroPie pre made image for the Raspberry Pi Zero
 
 Once you have installed RetroPie onto your SD card and mounted it on your Pi follow along with the [Installation Instructions](INSTALL.md) document provided
