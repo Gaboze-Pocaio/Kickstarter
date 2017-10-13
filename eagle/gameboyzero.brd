@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.08575" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -171,10 +171,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="71" y1="94" x2="0" y2="94" width="0" layer="20"/>
-<wire x1="0" y1="94" x2="0" y2="0" width="0" layer="20"/>
-<wire x1="0" y1="0" x2="71" y2="0" width="0" layer="20"/>
-<wire x1="71" y1="0" x2="71" y2="94" width="0" layer="20"/>
+<wire x1="0" y1="93" x2="0" y2="1" width="0" layer="20"/>
+<wire x1="0" y1="1" x2="1" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="1" y1="0" x2="70" y2="0" width="0" layer="20"/>
+<wire x1="70" y1="0" x2="71" y2="1" width="0" layer="20" curve="90"/>
+<wire x1="71" y1="1" x2="71" y2="93" width="0" layer="20"/>
+<wire x1="71" y1="93" x2="70" y2="94" width="0" layer="20" curve="90"/>
+<wire x1="70" y1="94" x2="1" y2="94" width="0" layer="20"/>
+<wire x1="1" y1="94" x2="0" y2="93" width="0" layer="20" curve="90"/>
 <rectangle x1="0" y1="0" x2="62" y2="77" layer="222"/>
 <rectangle x1="0" y1="0" x2="62" y2="77" layer="222"/>
 <rectangle x1="0" y1="0" x2="62" y2="77" layer="222"/>
@@ -182,11 +186,6 @@
 <rectangle x1="0" y1="0" x2="71" y2="89" layer="222"/>
 <rectangle x1="0" y1="0" x2="71" y2="89" layer="222"/>
 <rectangle x1="0" y1="0" x2="71" y2="89" layer="222"/>
-<circle x="67" y="34" radius="1.25" width="0.01" layer="20"/>
-<circle x="67" y="4" radius="1.25" width="0.01" layer="20"/>
-<circle x="4" y="4" radius="1.25" width="0.01" layer="20"/>
-<circle x="67" y="91" radius="1.25" width="0.01" layer="20"/>
-<circle x="4" y="91" radius="1.25" width="0.01" layer="20"/>
 <rectangle x1="43.1751" y1="1.07188125" x2="43.5181" y2="1.15763125" layer="21"/>
 <rectangle x1="43.0036" y1="1.15763125" x2="43.5181" y2="1.24338125" layer="21"/>
 <rectangle x1="43.6896" y1="1.15763125" x2="43.7754" y2="1.24338125" layer="21"/>
@@ -6087,6 +6086,31 @@ Datasheet (ADTSM63NVTR)</description>
 </package>
 </packages>
 </library>
+<library name="holes" urn="urn:adsk.eagle:library:237">
+<description>&lt;b&gt;Mounting Holes and Pads&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="2,8" urn="urn:adsk.eagle:footprint:14239/1" library_version="1">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 2.8 mm with drill center</description>
+<wire x1="-1.778" y1="0" x2="0" y2="-1.778" width="2.286" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="1.778" x2="1.778" y2="0" width="2.286" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="0.635" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="2.921" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="1.5" width="0.2032" layer="21"/>
+<hole x="0" y="0" drill="2.8"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="2,8" urn="urn:adsk.eagle:package:14271/1" type="box" library_version="1">
+<description>MOUNTING HOLE 2.8 mm with drill center</description>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6348,6 +6372,11 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="SWCH-11966" x="5.0294375" y="67.9116875" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="SF_SKU" value="COM-12992" x="22" y="17" size="1.778" layer="27" rot="R315" display="off"/>
 </element>
+<element name="H1" library="holes" library_urn="urn:adsk.eagle:library:237" package="2,8" package3d_urn="urn:adsk.eagle:package:14271/1" value="MOUNT-HOLE2.8" x="4" y="4"/>
+<element name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" package="2,8" package3d_urn="urn:adsk.eagle:package:14271/1" value="MOUNT-HOLE2.8" x="67" y="4"/>
+<element name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" package="2,8" package3d_urn="urn:adsk.eagle:package:14271/1" value="MOUNT-HOLE2.8" x="67" y="34"/>
+<element name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" package="2,8" package3d_urn="urn:adsk.eagle:package:14271/1" value="MOUNT-HOLE2.8" x="4" y="91"/>
+<element name="H5" library="holes" library_urn="urn:adsk.eagle:library:237" package="2,8" package3d_urn="urn:adsk.eagle:package:14271/1" value="MOUNT-HOLE2.8" x="67" y="91"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -6906,8 +6935,8 @@ design rules under a new name.</description>
 <approved hash="19,16,d77f03366d147f5d"/>
 <approved hash="19,16,115d03266d04b97f"/>
 <approved hash="4,16,56893166a93fc51d"/>
-<approved hash="4,16,531d2518b469cf6d"/>
 <approved hash="4,16,a619d1cbbeb1c096"/>
+<approved hash="4,16,531d2518b469cf6d"/>
 </errors>
 </board>
 </drawing>
