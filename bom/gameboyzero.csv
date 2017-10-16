@@ -1,11 +1,12 @@
 Designator,Manufacturer Part Number,Quantity
-CN1,S2B-PH-SM4-TB(LF)(SN),1
-LED1,LTST-C191KRKT,1
-S2,MA12R,1
-"R1, R2",RMCF0805JT100R,2
-SCREEN1,2-8-inch-18P-SPI-TFT-LCD,1
-"BTN_A, BTN_B, BTN_L1, BTN_L2, BTN_R1, BTN_R2, BTN_X, BTN_Y",TL3300AF160Q,8
-"BTN_SELECT, BTN_START",222BMVBAR,2
-"BTN_DOWN, BTN_LEFT, BTN_RIGHT, BTN_UP",TL3301SPF160QG,4
-POWER1,TP4056,1
-PI1,LINK,1
+CN1,https://www.digikey.ca/product-detail/en/jst-sales-america-inc/S2B-PH-SM4-TB(LF)(SN)/455-1749-1-ND/926846,1
+LED1,https://www.digikey.ca/product-detail/en/lite-on-inc/LTST-C191KRKT/160-1447-1-ND/386836,1
+S2,https://www.digikey.ca/product-detail/en/apem-inc/MA12R/679-3555-ND/1795602,1
+R1,https://www.digikey.ca/product-detail/en/yageo/RC0805FR-07100RL/311-100CRCT-ND/730490,1
+R2,https://www.digikey.ca/product-detail/en/yageo/RC0805JR-071KL/311-1.0KARCT-ND/731165,1
+SCREEN1,https://www.aliexpress.com/item/240x320-TFT-Color-LCD-2-8-Inch-SPI-Serial-ILI9341-Panel-Screen-Display-Module-R179T-Drop/32817291868.html,1
+"BTN_A, BTN_B, BTN_L1, BTN_L2, BTN_R1, BTN_R2, BTN_X, BTN_Y",https://www.digikey.ca/product-detail/en/e-switch/TL3300AF160Q/EG4902CT-ND/2498459,8
+"BTN_SELECT, BTN_START",https://www.digikey.ca/product-detail/en/cts-electrocomponents/222BMVBAR/CT3090CT-ND/5227996,2
+"BTN_DOWN, BTN_LEFT, BTN_RIGHT, BTN_UP",https://www.digikey.ca/product-detail/en/e-switch/TL3301SPF160QG/EG1869CT-ND/271566,4
+POWER1,https://www.aliexpress.com/item/1-a-lithium-battery-charging-and-protect-one-plate-protection-2-in-1-18650-lithium-battery/1494965903.html,1
+PI1,https://www.aliexpress.com/item/10-Pcs-Per-Lot-Pitch-2mm-2x20-Pin-40-Pin-Female-Double-Row-SMT-Pin-Header/32611363591.html,1
