@@ -265,9 +265,7 @@ Ensure that your file's content are **exactly** as below
     <input name="x" type="key" id="122" value="1"/>
     <input name="select" type="key" id="32" value="1"/>
     <input name="y" type="key" id="120" value="1"/>
-    <input name="left" type="key" id="1073741904" value="1"/>
-    <input name="a" type="key" id="1073742048" value="1"/>
-    <input name="b" type="key" id="1073742050" value="1"/>    
+    <input name="left" type="key" id="1073741904" value="1"/>  
   </inputConfig>
 </inputList>
 ```
