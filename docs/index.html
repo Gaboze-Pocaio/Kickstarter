@@ -83,8 +83,8 @@
         <script>
             if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
-            var container, laoder, clock, interval;
-            var camera, scene, renderer, dot;
+            var container, loader, clock, interval;
+            var camera, scene, renderer, dae;
             var w = window.innerWidth;
             var h = window.innerHeight;
 
@@ -126,7 +126,7 @@
 
                 var loadingManager = new THREE.LoadingManager( function() {
 
-                    scene.add( dot );
+                    scene.add( dae );
 
                 } );
 
@@ -141,10 +141,10 @@
                 loader.load(
                     models[model],
                     function ( collada ) {
-                        dot = collada.scene;
-                        dot.scale.x = dot.scale.y = dot.scale.z = 0.005;
-                        dot.updateMatrix();
-                        dot.material = new THREE.MeshLambertMaterial({
+                        dae = collada.scene;
+                        dae.scale.x = dae.scale.y = dae.scale.z = 0.005;
+                        dae.updateMatrix();
+                        dae.material = new THREE.MeshLambertMaterial({
                             color: 0x5c5c5c,
                             emissive: 0x000000,
                             shading: THREE.FlatShading,
@@ -176,7 +176,7 @@
                                 clearInterval(interval);
                             }
                         },10);
-                        scene.add( dot );
+                        scene.add( dae );
                     } ,
                     function ( xhr ) {
 
@@ -318,12 +318,12 @@
                 if(ty)
                 {
                     group.rotation.y += ( ty - group.rotation.y ) * 0.05;
-                    dot.rotation.y = group.rotation.y;
+                    dae.rotation.y = group.rotation.y;
                 }
                 if(tx)
                 {
                     group.rotation.x += ( tx - group.rotation.x ) * 0.05;
-                    dot.rotation.x = group.rotation.x;
+                    dae.rotation.x = group.rotation.x;
                 }
                 renderer.render( scene, camera );
             }
