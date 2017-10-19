@@ -70,10 +70,7 @@
 
         <div class="container"></div>
         <div class="progress"></div>
-        <div class="logo">
-            <a href="?board">board</a>
-            <a href="?parts">parts</a>
-        </div>
+        <div class="logo"></div>
 
         <script src="plugins/three.js"></script>
         <script src="plugins/ColladaLoader2.js"></script>
@@ -133,7 +130,8 @@
                 // collada
                 var models = {
                     board: './assets/gameboyzero.dae',
-                    parts: './assets/gameboy-parts.dae'
+                    parts: './assets/gameboy-parts.dae',
+                    holiday: './assets/gameboy-holiday.dae'
                 }
 
                 var loader = new THREE.ColladaLoader( loadingManager );
