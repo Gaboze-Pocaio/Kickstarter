@@ -63,11 +63,10 @@ With our project we have included a few custom Eagle CAD Libraries
 * [Displays](/library/GameboyZeroHandheldDisplays.lbr)
 * [Raspberry Pi Zero](/library/RPI-Zero.lbr)
 
-
 #### 3D Render
-You can play with the [3D Render Here](https://32teeth.github.io/Gameboy-Zero-Kickstarter/)
-
-
+* [white board with parts](https://32teeth.github.io/Gameboy-Zero-Kickstarter/?parts)
+* [black board no parts](https://32teeth.github.io/Gameboy-Zero-Kickstarter/?board)
+* [holiday express no parts](https://32teeth.github.io/Gameboy-Zero-Kickstarter/?holiday)
 
 
 ## Details
