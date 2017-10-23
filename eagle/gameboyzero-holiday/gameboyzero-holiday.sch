@@ -5849,6 +5849,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <wire x1="226.06" y1="99.06" x2="226.06" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="101.6" x2="228.6" y2="101.6" width="0.1524" layer="91"/>
 <label x="231.14" y="101.6" size="1.016" layer="95"/>
+<junction x="226.06" y="101.6"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
