@@ -5313,7 +5313,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </class>
 </classes>
 <parts>
-<part name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0805" value="100"/>
+<part name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0805" value="3R9"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SCREEN1" library="GameboyZeroHandheldDisplays" deviceset="GAMEBOYZEROHANDHELDDISPLAYS-2.8" device=""/>
 <part name="PI1" library="RPI-Zero" deviceset="RPI-ZERO" device=""/>
