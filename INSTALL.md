@@ -3,14 +3,23 @@
 > This document is intended for a somewhat advanced user base, but we have made it simple enough to follow along for anyone
 
 
+
+
+
 ### Prerequisites
+
 1. Fresh RetroPie install mounted on an SD Card
 2. Raspberry Pi Zero *(preferably WiFi edition)*
 3. Keyboard
 4. OTG USB Cable (to plug in a USB A type keyboard)
 5. Mini HDMI (you know, to see things on a screen)
 
+
+
+
+
 ## Step 1
+
 > Setup Raspberry Pi requirements
 
 With your Keyboard and HDMI cable plugged in, go ahead and turn on your Raspberry Pi Zero
@@ -30,11 +39,13 @@ In the Interfaceing Options menu, you will need to
 2. Enable SPI
 
 In the Advance Options menu, you will need to
-1. Exapnd Filesystem
+1. Expand Filesystem
 2. Disable Overscan
 
 Once these are complete, you will be asked to reboot you Raspbery Pi.
 Do so.
+
+
 
 ### WiFi
 
@@ -43,6 +54,8 @@ Once the Raspberry Pi reboots into EmulationStation, use your keyboard and navig
 Select WiFi and enter your SSID/PSK information as necessary
 
 Once you have connected to your WiFi network, you can go back to your laptop and continue via SSH from there
+
+
 
 #### Optional
 
@@ -71,19 +84,33 @@ If you have done your WiFi correctly from here you can use SSH
 ssh pi@[ip address]
 ```
 
+
+
+
+
 ## Step 2
+
 > We will now be connecting the 2.8" ILI9341 TFT LCD module, so you can set your other keyboard aside for now
 
 From you computer *(not the Raspberry Pi)*
+
+
 
 ### TFT Device
 
 Enter the following to add a Loadable Kernel Module for the TFT Device
 ```shell
-sudo modprobe fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24,led:18 speed=80000000 fps=60 bgr=1 brightness=100 rotate=90
+sudo modprobe fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24,led:4 speed=80000000 fps=60 bgr=1 rotate=90
+```
+
+*Note:* if you need to remove the module, simply
+
+```shell
+sudo modprobe -r fbtft_device
 ```
 
 Confirm the module has been loaded
+
 ```shell
 dmesg | tail 
 ```
@@ -111,7 +138,11 @@ con2fbmap 1 0
 ```
 
 
+
+
+
 ## Step 3
+
 ### Automate the above on startup
 
 Open the modules file
@@ -136,7 +167,7 @@ sudo nano /etc/modprobe.d/fbtft.conf
 
 Add this line to the empty file
 ```shell
-options fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24,led:18 speed=80000000 fps=60 bgr=1 brightness=100 rotate=90 custom=1
+options fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24,led:4 speed=80000000 fps=60 bgr=1 rotate=90 custom=1
 ```
 
 *Hit 'CTRL+X' and 'Y' to confirm the save*
@@ -156,6 +187,7 @@ cmake ..
 make
 sudo install fbcp /usr/local/bin/fbcp
 fbcp
+
 ```
 
 *Hit CTRL+C to exit 'fbcp'*
@@ -187,7 +219,12 @@ fbcp&
 exit 0
 ```
 
+
+
+
+
 ## Step 4
+
 > Now we are ready to configure the GPIO on the Raspberry Pi as a controller
 
 ### Install RetroGame
@@ -265,9 +302,7 @@ Ensure that your file's content are **exactly** as below
     <input name="x" type="key" id="122" value="1"/>
     <input name="select" type="key" id="32" value="1"/>
     <input name="y" type="key" id="120" value="1"/>
-    <input name="left" type="key" id="1073741904" value="1"/>
-    <input name="a" type="key" id="1073742048" value="1"/>
-    <input name="b" type="key" id="1073742050" value="1"/>    
+    <input name="left" type="key" id="1073741904" value="1"/>  
   </inputConfig>
 </inputList>
 ```
