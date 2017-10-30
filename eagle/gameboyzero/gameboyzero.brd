@@ -2100,7 +2100,6 @@
 <rectangle x1="27.993" y1="92.837" x2="33.497" y2="92.923" layer="21"/>
 <rectangle x1="34.529" y1="92.837" x2="38.313" y2="92.923" layer="21"/>
 <rectangle x1="25.069" y1="92.923" x2="26.875" y2="93.009" layer="21"/>
-<text x="0" y="-0.43" size="0.172" layer="21" font="vector">/Users/eugene/Documents/github/32teeth/Gameboy-Zero-Kickstarter/silks/gameboyzero-top.bmp</text>
 <rectangle x1="16.899" y1="8.385" x2="16.985" y2="8.471" layer="22"/>
 <rectangle x1="16.813" y1="8.471" x2="17.157" y2="8.557" layer="22"/>
 <rectangle x1="53.535" y1="8.471" x2="53.793" y2="8.557" layer="22"/>
@@ -5702,7 +5701,6 @@
 <rectangle x1="53.363" y1="92.665" x2="54.137" y2="92.751" layer="22"/>
 <rectangle x1="54.481" y1="92.665" x2="54.739" y2="92.751" layer="22"/>
 <rectangle x1="55.255" y1="92.665" x2="55.513" y2="92.751" layer="22"/>
-<text x="0" y="-0.43" size="0.172" layer="22" font="vector" rot="MR0">/Users/eugene/Documents/github/32teeth/Gameboy-Zero-Kickstarter/silks/gameboyzero-bottom.bmp</text>
 </plain>
 <libraries>
 <library name="RPI-Zero">
