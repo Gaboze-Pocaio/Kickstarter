@@ -187,7 +187,6 @@ cmake ..
 make
 sudo install fbcp /usr/local/bin/fbcp
 fbcp
-
 ```
 
 *Hit CTRL+C to exit 'fbcp'*
@@ -264,8 +263,8 @@ LEFTCTRL  19  # 'A' button
 LEFTALT    5  # 'B' button
 Z          6  # 'X' button
 X         13  # 'Y' button
-SPACE     16  # 'Select' button
-ENTER     26  # 'Start' button
+SPACE     26  # 'Select' button
+ENTER     16  # 'Start' button
 A         18  # Left shoulder button
 S         27  # Right shoulder button
 Q         15  # Left trigger button
