@@ -7,16 +7,16 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="13" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -450,12 +450,6 @@
 <wire x1="287" y1="171" x2="286" y2="172" width="0" layer="20" curve="90"/>
 <wire x1="286" y1="172" x2="217" y2="172" width="0" layer="20"/>
 <wire x1="217" y1="172" x2="216" y2="171" width="0" layer="20" curve="90"/>
-<wire x1="-50.8" y1="152.4" x2="-50.8" y2="127" width="0.1524" layer="20"/>
-<wire x1="-50.8" y1="127" x2="-25.4" y2="127" width="0.1524" layer="20"/>
-<wire x1="-25.4" y1="127" x2="-25.4" y2="152.4" width="0.1524" layer="20"/>
-<wire x1="-25.4" y1="152.4" x2="-50.8" y2="152.4" width="0.1524" layer="20"/>
-<text x="-37.75" y="139.5" size="1.778" layer="20" align="center">1" square
-reference</text>
 </plain>
 <libraries>
 <library name="holes" urn="urn:adsk.eagle:library:237">
@@ -891,10 +885,6 @@ design rules under a new name.</description>
 </board>
 </drawing>
 <compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
