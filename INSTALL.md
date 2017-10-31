@@ -255,7 +255,7 @@ You can replace the entire file with the following
 
 ```shell
 # Here's a pin configuration for the PiGRRL 2 project:
-LEFT      21  # Joypad left
+LEFT      22  # Joypad left
 RIGHT     20  # Joypad right
 UP         7  # Joypad up
 DOWN      12  # Joypad down
