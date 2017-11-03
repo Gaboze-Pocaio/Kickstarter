@@ -60,7 +60,7 @@ Once you have connected to your WiFi network, you can go back to your laptop and
 #### Optional
 
 Should you choose to work completely from terminal, hit F4 from the EmulationStation menu to get to terminal
-, 
+
 ```shell
 sudo iwlist wlan0 scan
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
