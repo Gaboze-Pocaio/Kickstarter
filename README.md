@@ -27,6 +27,8 @@
 ## Introduction
 
 ### Gameboy Zero - Handheld Edition
+<img src="images/gameboyzerohandheldsplash.jpg" width="100%">
+
 Raspberry Pi Zero based arcade in you pocket
 
 
