@@ -100,7 +100,7 @@ From you computer *(not the Raspberry Pi)*
 
 Enter the following to add a Loadable Kernel Module for the TFT Device
 ```shell
-sudo modprobe fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24,led:4 speed=80000000 fps=60 bgr=1 rotate=90
+sudo modprobe fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24 speed=80000000 fps=60 bgr=1 rotate=90
 ```
 
 *Note:* if you need to remove the module, simply
