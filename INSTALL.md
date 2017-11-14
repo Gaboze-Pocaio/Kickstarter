@@ -167,7 +167,7 @@ sudo nano /etc/modprobe.d/fbtft.conf
 
 Add this line to the empty file
 ```shell
-options fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24,led:4 speed=80000000 fps=60 bgr=1 rotate=90 custom=1
+options fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24 speed=80000000 fps=60 bgr=1 rotate=90 custom=1
 ```
 
 *Hit 'CTRL+X' and 'Y' to confirm the save*
