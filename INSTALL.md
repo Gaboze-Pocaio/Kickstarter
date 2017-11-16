@@ -103,12 +103,6 @@ Enter the following to add a Loadable Kernel Module for the TFT Device
 sudo modprobe fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24 speed=80000000 fps=60 bgr=1 rotate=90
 ```
 
-*Note:* if you need to remove the module, simply
-
-```shell
-sudo modprobe -r fbtft_device
-```
-
 Confirm the module has been loaded
 
 ```shell
@@ -135,6 +129,12 @@ Should you ever need to stop the mapping, reverse the command
 ```shell
 # switch tft to hdmi
 con2fbmap 1 0
+```
+
+*Note:* if you need to remove the module, simply
+
+```shell
+sudo modprobe -r fbtft_device
 ```
 
 
@@ -167,7 +167,7 @@ sudo nano /etc/modprobe.d/fbtft.conf
 
 Add this line to the empty file
 ```shell
-options fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24,led:4 speed=80000000 fps=60 bgr=1 rotate=90 custom=1
+options fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24 speed=80000000 fps=60 bgr=1 rotate=90 custom=1
 ```
 
 *Hit 'CTRL+X' and 'Y' to confirm the save*
@@ -220,9 +220,63 @@ exit 0
 
 
 
+## Step 5
+
+> USB Audio Configuration
+
+Plug in your USB Audio Card, and list your usb devices
+
+```shell
+lsusb
+```
+
+Now run the sound modules probe
+
+```shell
+cat /proc/asound/modules
+```
+
+You will see something like
+
+```shell
+ 0 snd_bcm2835
+ 1 snd_usb_audio
+```
+
+The ```snd_bcm2835``` is the default, we wan't to force the USB output so, we will edit the conf file
+
+```shell
+sudo nano /etc/modprobe.d/alsa-base.conf
+```
+
+Add these lines
+
+```shell
+options snd_usb_audio index=0
+options snd_bcm2835 index=1
+options snd slots=snd-usb-audio,snd-bcm2835
+```
+
+Reboot, and return to terminal (F4) once EmulationStation has restarted
+
+List out the module probe
+
+```
+cat /proc/asound/modules
+```
+
+You will see something like
+
+```shell
+ 0 snd_usb_audio
+ 1 snd_bcm2835
+```
+
+Success, enjoy the sound
 
 
-## Step 4
+
+## Step 6
 
 > Now we are ready to configure the GPIO on the Raspberry Pi as a controller
 
@@ -240,7 +294,7 @@ Select the **PiGRRL 2 Controls** option, and the program will continue to instal
 Once complete, you will be asked if you want to reboot. 
 #### Don't reboot just yet
 
-## Step 5
+## Step 7
 > You will now be assigning keyboard inputs to action buttons of the controller (GPIO pins on the Raspberry Pi)
 
 ### RetroGame Configuration
@@ -308,7 +362,7 @@ Ensure that your file's content are **exactly** as below
 
 If all is good as above, hit CTRL+X to exit the editor and
 
-# Step 6
+# Step 8
 > The final reboot, you can now unplug the HDMI from the Raspberry Pi
 
 Reboot
@@ -323,9 +377,9 @@ Once EmulationStation is up, you will again see the 'No Device Configured' scree
 With your keyboard plugged in, press and hold 'Enter' until the Controller Configuration shows up on the screen
 
 Hit your keys on your keyboard as mapped above, skip the analog sticks
-* **pro tip**:When you get to the section*
+* **pro tip**: When you get to the section*
 
-# Step 7
+# Step 9
 > This one is all on you
 
 We **DO NOT** provide any system or game *'roms'*, for that you will need Google.
