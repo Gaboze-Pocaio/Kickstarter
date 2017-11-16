@@ -141,3 +141,11 @@ The design for the layered plexi case are in the [case folder](/case)
 > If you do not plan on using the provided Raspberry Pi image, simply [download](https://retropie.org.uk/download/) the latest RetroPie pre made image for the Raspberry Pi Zero
 
 Once you have installed RetroPie onto your SD card and mounted it on your Pi follow along with the [Installation Instructions](INSTALL.md) document provided
+
+
+
+#### A word from our sponsor
+
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/UNtvL4qmeBB7aDs3BgS4p8Hg/32teeth/Gameboy-Zero-Kickstarter'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/UNtvL4qmeBB7aDs3BgS4p8Hg/32teeth/Gameboy-Zero-Kickstarter.svg' />
+</a>
