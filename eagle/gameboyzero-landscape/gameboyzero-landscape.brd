@@ -1,0 +1,1273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="8.4.1">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="yes"/>
+<layer number="101" name="Text" color="7" fill="1" visible="no" active="yes"/>
+<layer number="102" name="t-cream" color="7" fill="1" visible="no" active="yes"/>
+<layer number="103" name="stat" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="tplace-old" color="7" fill="1" visible="no" active="yes"/>
+<layer number="109" name="ref-old" color="7" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="no" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="yes"/>
+<layer number="117" name="mPads" color="7" fill="1" visible="no" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
+<layer number="119" name="mUnrouted" color="7" fill="1" visible="no" active="yes"/>
+<layer number="120" name="mDimension" color="7" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
+<layer number="130" name="mbStop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="mtFinish" color="7" fill="1" visible="no" active="yes"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="no" active="yes"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="no" active="yes"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="no" active="yes"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="no" active="yes"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="yes"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="no" active="yes"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="yes"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="no" active="yes"/>
+<layer number="144" name="DrillLegend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="no" active="yes"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="yes"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="yes"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="yes"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="yes"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="yes"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Displayboard" color="7" fill="1" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
+<layer number="201" name="bot-01" color="7" fill="1" visible="no" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="217" name="217bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="218" name="218bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="219" name="219bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="220" name="220bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="221" name="221bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="222" name="imagesize" color="7" fill="1" visible="no" active="yes"/>
+<layer number="223" name="223bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="224" name="224bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="no" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="yes"/>
+<layer number="254" name="Kommentar" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="HELP" color="7" fill="1" visible="no" active="yes"/>
+</layers>
+<board>
+<plain>
+<wire x1="0" y1="56" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="156" y2="0" width="0" layer="20"/>
+<wire x1="156" y1="0" x2="156" y2="56" width="0" layer="20"/>
+<wire x1="156" y1="56" x2="0" y2="56" width="0" layer="20"/>
+<rectangle x1="0" y1="0" x2="62" y2="77" layer="222"/>
+<rectangle x1="0" y1="0" x2="62" y2="77" layer="222"/>
+<rectangle x1="0" y1="0" x2="62" y2="77" layer="222"/>
+<rectangle x1="0" y1="0" x2="71" y2="89" layer="222"/>
+<rectangle x1="0" y1="0" x2="71" y2="89" layer="222"/>
+<rectangle x1="0" y1="0" x2="71" y2="89" layer="222"/>
+<rectangle x1="0" y1="0" x2="71" y2="89" layer="222"/>
+</plain>
+<libraries>
+<library name="RPI-Zero">
+<description>Generated from &lt;b&gt;TMC2660-test-with-grbl.brd&lt;/b&gt;&lt;p&gt;
+by exp-project-lbr.ulp</description>
+<packages>
+<package name="RASPBERRYPI_BASTELSTUBE_V13_RASPI_BOARD_B+_FULL">
+<description>Raspberry Pi board model B+, full outline with position of big connectors &amp;amp; drill holes</description>
+<wire x1="0" y1="3" x2="3" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="3" y1="0" x2="6.85" y2="0" width="0.127" layer="21"/>
+<wire x1="14.35" y1="0" x2="37.75" y2="0" width="0.127" layer="21"/>
+<wire x1="62" y1="0" x2="65" y2="3" width="0.127" layer="21" curve="90"/>
+<wire x1="65" y1="3" x2="65" y2="27" width="0.127" layer="21"/>
+<wire x1="65" y1="27" x2="62" y2="30" width="0.127" layer="21" curve="90"/>
+<wire x1="62" y1="30" x2="3" y2="30" width="0.127" layer="21"/>
+<wire x1="3" y1="30" x2="0" y2="27" width="0.127" layer="21" curve="90"/>
+<wire x1="0" y1="27" x2="0" y2="3" width="0.127" layer="21"/>
+<wire x1="7.1" y1="29.04" x2="7.1" y2="26.5" width="0.127" layer="21"/>
+<wire x1="7.1" y1="26.5" x2="7.1" y2="23.96" width="0.127" layer="21"/>
+<wire x1="7.1" y1="23.96" x2="8.0525" y2="23.96" width="0.127" layer="21"/>
+<wire x1="8.0525" y1="23.96" x2="8.6875" y2="23.96" width="0.127" layer="21"/>
+<wire x1="8.6875" y1="23.96" x2="9.64" y2="23.96" width="0.127" layer="21"/>
+<wire x1="9.64" y1="23.96" x2="57.9" y2="23.96" width="0.127" layer="21"/>
+<wire x1="57.9" y1="23.96" x2="57.9" y2="29.04" width="0.127" layer="21"/>
+<wire x1="57.9" y1="29.04" x2="7.1" y2="29.04" width="0.127" layer="21"/>
+<wire x1="7.1" y1="26.5" x2="9.64" y2="26.5" width="0.127" layer="21"/>
+<wire x1="9.64" y1="26.5" x2="9.64" y2="23.96" width="0.127" layer="21"/>
+<wire x1="8.0525" y1="23.96" x2="8.0525" y2="23.6425" width="0.127" layer="21"/>
+<wire x1="8.0525" y1="23.6425" x2="8.6875" y2="23.6425" width="0.127" layer="21"/>
+<wire x1="8.6875" y1="23.6425" x2="8.6875" y2="23.96" width="0.127" layer="21"/>
+<wire x1="6.85" y1="0" x2="6.6" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="6.6" y1="-0.5" x2="14.6" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="14.6" y1="-0.5" x2="14.35" y2="0" width="0.127" layer="21"/>
+<text x="8.0525" y="22.3725" size="1.016" layer="21" font="vector" ratio="10">1</text>
+<wire x1="37.75" y1="0" x2="37.5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="37.5" y1="-0.5" x2="45.5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="45.5" y1="-0.5" x2="45.25" y2="0" width="0.127" layer="21"/>
+<wire x1="50.35" y1="0" x2="50.1" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="50.1" y1="-0.5" x2="58.1" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="58.1" y1="-0.5" x2="57.85" y2="0" width="0.127" layer="21"/>
+<smd name="1" x="8.382" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="2" x="8.382" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="3" x="10.922" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="4" x="10.922" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="5" x="13.462" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="6" x="13.462" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="7" x="16.002" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="8" x="16.002" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="9" x="18.542" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="10" x="18.542" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="11" x="21.082" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="12" x="21.082" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="13" x="23.622" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="14" x="23.622" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="15" x="26.162" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="16" x="26.162" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="17" x="28.702" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="18" x="28.702" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="19" x="31.242" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="20" x="31.242" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="21" x="33.782" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="22" x="33.782" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="23" x="36.322" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="24" x="36.322" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="25" x="38.862" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="26" x="38.862" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="27" x="41.402" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="28" x="41.402" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="29" x="43.942" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="30" x="43.942" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="31" x="46.482" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="32" x="46.482" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="33" x="49.022" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="34" x="49.022" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="35" x="51.562" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="36" x="51.562" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="37" x="54.102" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="38" x="54.102" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<smd name="39" x="56.642" y="24.384" dx="1.524" dy="3.302" layer="1"/>
+<smd name="40" x="56.642" y="28.702" dx="1.524" dy="3.302" layer="1"/>
+<wire x1="45.25" y1="0" x2="50.35" y2="0" width="0.127" layer="21"/>
+<wire x1="57.85" y1="0" x2="62" y2="0" width="0.127" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="adafruit" urn="urn:adsk.eagle:library:420">
+<packages>
+<package name="CHIPLED_0805">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
+<wire x1="-0.35" y1="1" x2="0.35" y2="1" width="0.1016" layer="51" curve="180" cap="flat"/>
+<wire x1="-0.35" y1="-1" x2="0.35" y2="-1" width="0.1016" layer="51" curve="-180" cap="flat"/>
+<wire x1="0.575" y1="0.525" x2="0.575" y2="-0.525" width="0.1016" layer="51"/>
+<wire x1="-0.575" y1="-0.5" x2="-0.575" y2="0.925" width="0.1016" layer="51"/>
+<circle x="-0.45" y="0.85" radius="0.103" width="0.1016" layer="51"/>
+<smd name="C" x="0" y="1.05" dx="1.2" dy="1.2" layer="1"/>
+<smd name="A" x="0" y="-1.05" dx="1.2" dy="1.2" layer="1"/>
+<text x="-1.27" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="2.54" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="0.3" y1="0.5" x2="0.625" y2="1" layer="51"/>
+<rectangle x1="-0.325" y1="0.5" x2="-0.175" y2="0.75" layer="51"/>
+<rectangle x1="0.175" y1="0.5" x2="0.325" y2="0.75" layer="51"/>
+<rectangle x1="-0.2" y1="0.5" x2="0.2" y2="0.675" layer="51"/>
+<rectangle x1="0.3" y1="-1" x2="0.625" y2="-0.5" layer="51"/>
+<rectangle x1="-0.625" y1="-1" x2="-0.3" y2="-0.5" layer="51"/>
+<rectangle x1="0.175" y1="-0.75" x2="0.325" y2="-0.5" layer="51"/>
+<rectangle x1="-0.325" y1="-0.75" x2="-0.175" y2="-0.5" layer="51"/>
+<rectangle x1="-0.2" y1="-0.675" x2="0.2" y2="-0.5" layer="51"/>
+<rectangle x1="-0.1" y1="0" x2="0.1" y2="0.2" layer="21"/>
+<rectangle x1="-0.6" y1="0.5" x2="-0.3" y2="0.8" layer="51"/>
+<rectangle x1="-0.625" y1="0.925" x2="-0.4" y2="1" layer="51"/>
+</package>
+<package name="R0805">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+chip</description>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-1" y="0" dx="1.1" dy="1.4" layer="1"/>
+<smd name="2" x="1" y="0" dx="1.1" dy="1.4" layer="1"/>
+<text x="-0.762" y="1.016" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-2.286" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="21"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="21"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+</package>
+</packages>
+</library>
+<library name="03962A">
+<packages>
+<package name="03962A">
+<wire x1="0" y1="0" x2="17" y2="0" width="0.1" layer="21"/>
+<wire x1="17" y1="0" x2="17" y2="26" width="0.1" layer="21"/>
+<wire x1="17" y1="26" x2="0" y2="26" width="0.1" layer="21"/>
+<wire x1="0" y1="26" x2="0" y2="0" width="0.1" layer="21"/>
+<smd name="IN-" x="1.35" y="24.65" dx="2.54" dy="2.54" layer="1"/>
+<smd name="IN+" x="15.65" y="24.65" dx="2.54" dy="2.54" layer="1"/>
+<smd name="OUT+" x="15.65" y="1.35" dx="2.54" dy="2.54" layer="1"/>
+<smd name="OUT-" x="1.35" y="1.35" dx="2.54" dy="2.54" layer="1"/>
+<smd name="B-" x="5" y="1.35" dx="2.54" dy="2.54" layer="1"/>
+<smd name="B+" x="12" y="1.35" dx="2.54" dy="2.54" layer="1"/>
+<text x="6.91" y="24.11" size="1.27" layer="49">USB</text>
+<text x="5.08" y="19.05" size="1.27" layer="25">&gt;name</text>
+<text x="5.08" y="12.7" size="1.27" layer="27">&gt;value</text>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Switches" urn="urn:adsk.eagle:library:535">
+<description>&lt;h3&gt;SparkFun Switches, Buttons, Encoders&lt;/h3&gt;
+In this library you'll find switches, buttons, joysticks, and anything that moves to create or disrupt an electrical connection.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="TACTILE_SWITCH_SMD_6.0X3.5MM" urn="urn:adsk.eagle:footprint:40106/1" library_version="1">
+<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 6.0 x 3.5 mm&lt;/h3&gt;
+&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/1101.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-3" y1="1.1" x2="-3" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="3" y1="1.1" x2="3" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="-2.75" y1="1.75" x2="-3" y2="1.5" width="0.2032" layer="21" curve="90"/>
+<wire x1="-2.75" y1="1.75" x2="2.75" y2="1.75" width="0.2032" layer="21"/>
+<wire x1="2.75" y1="1.75" x2="3" y2="1.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="3" y1="-1.5" x2="2.75" y2="-1.75" width="0.2032" layer="21" curve="-90"/>
+<wire x1="2.75" y1="-1.75" x2="-2.75" y2="-1.75" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-1.5" x2="-2.75" y2="-1.75" width="0.2032" layer="21" curve="90"/>
+<wire x1="-3" y1="-1.5" x2="-3" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-3" y1="1.1" x2="-3" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="3" y1="1.1" x2="3" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="3" y1="-1.5" x2="3" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="0.75" x2="1.5" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="-0.75" x2="-1.5" y2="-0.75" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="-0.75" x2="-1.5" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="-0.75" x2="1.5" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="-2" y1="0" x2="-1" y2="0" width="0.127" layer="51"/>
+<wire x1="-1" y1="0" x2="0.1" y2="0.5" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0" x2="2" y2="0" width="0.127" layer="51"/>
+<smd name="1" x="-3.15" y="0" dx="2.3" dy="1.6" layer="1" rot="R180"/>
+<smd name="2" x="3.15" y="0" dx="2.3" dy="1.6" layer="1" rot="R180"/>
+<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
+<package name="TACTILE_SWITCH_SMD_6.2MM_TALL" urn="urn:adsk.eagle:footprint:40107/1" library_version="1">
+<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 6.2mm Square&lt;/h3&gt;
+&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.apem.com/files/apem/brochures/ADTS6-ADTSM-KTSC6.pdf"&gt;Datasheet&lt;/a&gt; (ADTSM63NVTR)&lt;/p&gt;</description>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.2032" layer="21"/>
+<wire x1="3" y1="-3" x2="3" y2="3" width="0.2032" layer="21"/>
+<wire x1="3" y1="3" x2="-3" y2="3" width="0.2032" layer="21"/>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1.75" width="0.2032" layer="21"/>
+<smd name="A1" x="-3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<smd name="A2" x="3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<smd name="B1" x="-3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<smd name="B2" x="3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<text x="0" y="3.175" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
+<package name="TACTILE_SWITCH_SMD_12MM" urn="urn:adsk.eagle:footprint:40109/1" library_version="1">
+<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 12mm Square&lt;/h3&gt;
+&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Components/Switches/N301102.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="5" y1="-1.3" x2="5" y2="-0.7" width="0.2032" layer="51"/>
+<wire x1="5" y1="-0.7" x2="4.5" y2="-0.2" width="0.2032" layer="51"/>
+<wire x1="5" y1="0.2" x2="5" y2="1" width="0.2032" layer="51"/>
+<wire x1="-6" y1="4" x2="-6" y2="5" width="0.2032" layer="21"/>
+<wire x1="-5" y1="6" x2="5" y2="6" width="0.2032" layer="21"/>
+<wire x1="6" y1="5" x2="6" y2="4" width="0.2032" layer="21"/>
+<wire x1="6" y1="1" x2="6" y2="-1" width="0.2032" layer="21"/>
+<wire x1="6" y1="-4" x2="6" y2="-5" width="0.2032" layer="21"/>
+<wire x1="5" y1="-6" x2="-5" y2="-6" width="0.2032" layer="21"/>
+<wire x1="-6" y1="-5" x2="-6" y2="-4" width="0.2032" layer="21"/>
+<wire x1="-6" y1="-1" x2="-6" y2="1" width="0.2032" layer="21"/>
+<wire x1="-6" y1="-5" x2="-5" y2="-6" width="0.2032" layer="21"/>
+<wire x1="6" y1="-5" x2="5" y2="-6" width="0.2032" layer="21"/>
+<wire x1="6" y1="5" x2="5" y2="6" width="0.2032" layer="21"/>
+<wire x1="-5" y1="6" x2="-6" y2="5" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="3.5" width="0.2032" layer="21"/>
+<circle x="-4.5" y="4.5" radius="0.3" width="0.7" layer="21"/>
+<circle x="4.5" y="4.5" radius="0.3" width="0.7" layer="21"/>
+<circle x="4.5" y="-4.5" radius="0.3" width="0.7" layer="21"/>
+<circle x="-4.5" y="-4.5" radius="0.3" width="0.7" layer="21"/>
+<smd name="4" x="-6.975" y="2.5" dx="1.6" dy="1.55" layer="1"/>
+<smd name="2" x="-6.975" y="-2.5" dx="1.6" dy="1.55" layer="1"/>
+<smd name="1" x="6.975" y="-2.5" dx="1.6" dy="1.55" layer="1"/>
+<smd name="3" x="6.975" y="2.5" dx="1.6" dy="1.55" layer="1"/>
+<text x="0" y="6.223" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-6.223" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
+<package name="SWITCH_SPST_SMD_A" urn="urn:adsk.eagle:footprint:40124/1" library_version="1">
+<description>&lt;h3&gt;SPDT Slide Switch - SMD&lt;/h3&gt;
+&lt;p&gt;Single-pole, double-throw (SPDT) switch.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/Switches/SLIDE.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-3.35" y1="1.3" x2="-3.35" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="-3.35" y1="-1.3" x2="3.35" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="3.35" y1="-1.3" x2="3.35" y2="1.3" width="0.127" layer="51"/>
+<wire x1="3.35" y1="1.3" x2="-0.1" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="1.3" x2="-1.4" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="1.3" x2="-3.35" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="1.3" x2="-0.1" y2="2.8" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="2.8" x2="-1.4" y2="2.8" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="2.8" x2="-1.4" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-3.477" y1="0.427" x2="-3.477" y2="-0.427" width="0.2032" layer="21"/>
+<wire x1="3.477" y1="0.427" x2="3.477" y2="-0.427" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="1.427" x2="-2.7" y2="1.427" width="0.2032" layer="21"/>
+<wire x1="1.627" y1="-1.427" x2="-0.127" y2="-1.427" width="0.2032" layer="21"/>
+<smd name="1" x="-2.25" y="-1.75" dx="0.7" dy="1.5" layer="1" rot="R180"/>
+<smd name="2" x="-0.75" y="-1.75" dx="0.7" dy="1.5" layer="1" rot="R180"/>
+<smd name="3" x="2.25" y="-1.75" dx="0.7" dy="1.5" layer="1" rot="R180"/>
+<smd name="GND1" x="-3.65" y="1" dx="1" dy="0.6" layer="1"/>
+<smd name="GND2" x="-3.65" y="-1.1" dx="1" dy="0.8" layer="1"/>
+<smd name="GND3" x="3.65" y="1" dx="1" dy="0.6" layer="1"/>
+<smd name="GND4" x="3.65" y="-1.1" dx="1" dy="0.8" layer="1"/>
+<hole x="-1.5" y="0" drill="0.9"/>
+<hole x="1.5" y="0" drill="0.9"/>
+<text x="0.762" y="-1.397" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center">&gt;Name</text>
+<text x="0" y="1.397" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center">&gt;Value</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="TACTILE_SWITCH_SMD_12MM" urn="urn:adsk.eagle:package:40166/1" type="box" library_version="1">
+<description>Momentary Switch (Pushbutton) - SPST - SMD, 12mm Square
+Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
+Datasheet</description>
+</package3d>
+<package3d name="TACTILE_SWITCH_SMD_6.0X3.5MM" urn="urn:adsk.eagle:package:40165/1" type="box" library_version="1">
+<description>Momentary Switch (Pushbutton) - SPST - SMD, 6.0 x 3.5 mm
+Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
+Datasheet</description>
+</package3d>
+<package3d name="SWITCH_SPST_SMD_A" urn="urn:adsk.eagle:package:40179/1" type="box" library_version="1">
+<description>SPDT Slide Switch - SMD
+Single-pole, double-throw (SPDT) switch.
+Datasheet</description>
+</package3d>
+<package3d name="TACTILE_SWITCH_SMD_6.2MM_TALL" urn="urn:adsk.eagle:package:40172/1" type="box" library_version="1">
+<description>Momentary Switch (Pushbutton) - SPST - SMD, 6.2mm Square
+Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
+Datasheet (ADTSM63NVTR)</description>
+</package3d>
+</packages3d>
+</library>
+<library name="GameboyZeroHandheldDisplays">
+<packages>
+<package name="GAMEBOYZEROHANDHELDDISPLAYS-3.2">
+<description>Gameboy Zero Handheld Displays - 2.8 Inch connector for ili9341 screens with SPI interface</description>
+<smd name="P$9" x="-22" y="0.4" dx="4" dy="0.4" layer="1"/>
+<smd name="P$10" x="-22" y="-0.4" dx="4" dy="0.4" layer="1"/>
+<smd name="P$8" x="-22" y="1.2" dx="4" dy="0.4" layer="1"/>
+<smd name="P$7" x="-22" y="2" dx="4" dy="0.4" layer="1"/>
+<smd name="P$6" x="-22" y="2.8" dx="4" dy="0.4" layer="1"/>
+<smd name="P$5" x="-22" y="3.6" dx="4" dy="0.4" layer="1"/>
+<smd name="P$4" x="-22" y="4.4" dx="4" dy="0.4" layer="1"/>
+<smd name="P$3" x="-22" y="5.2" dx="4" dy="0.4" layer="1"/>
+<smd name="P$11" x="-22" y="-1.2" dx="4" dy="0.4" layer="1"/>
+<smd name="P$12" x="-22" y="-2" dx="4" dy="0.4" layer="1"/>
+<smd name="P$13" x="-22" y="-2.8" dx="4" dy="0.4" layer="1"/>
+<smd name="P$14" x="-22" y="-3.6" dx="4" dy="0.4" layer="1"/>
+<smd name="P$15" x="-22" y="-4.4" dx="4" dy="0.4" layer="1"/>
+<smd name="P$16" x="-22" y="-5.2" dx="4" dy="0.4" layer="1"/>
+<text x="-14" y="6" size="1.27" layer="25">&gt;name</text>
+<text x="-14" y="-3.2" size="1.27" layer="27">&gt;value</text>
+<smd name="P$2" x="-22" y="6" dx="4" dy="0.4" layer="1"/>
+<smd name="P$1" x="-22" y="6.8" dx="4" dy="0.4" layer="1"/>
+<smd name="P$17" x="-22" y="-6" dx="4" dy="0.4" layer="1"/>
+<smd name="P$18" x="-22" y="-6.8" dx="4" dy="0.4" layer="1"/>
+<text x="-22" y="9.4" size="1.27" layer="21">1</text>
+<text x="-22" y="-10" size="1.27" layer="21">18</text>
+<wire x1="-38.7" y1="27" x2="38.7" y2="27" width="0.127" layer="21"/>
+<wire x1="38.7" y1="27" x2="38.7" y2="-27" width="0.127" layer="21"/>
+<wire x1="38.7" y1="-27" x2="-38.7" y2="-27" width="0.127" layer="21"/>
+<wire x1="-38.7" y1="-27" x2="-38.7" y2="27" width="0.127" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="holes" urn="urn:adsk.eagle:library:237">
+<description>&lt;b&gt;Mounting Holes and Pads&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="2,8" urn="urn:adsk.eagle:footprint:14239/1" library_version="1">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 2.8 mm with drill center</description>
+<wire x1="-1.778" y1="0" x2="0" y2="-1.778" width="2.286" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="1.778" x2="1.778" y2="0" width="2.286" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="0.635" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="2.921" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="1.5" width="0.2032" layer="21"/>
+<hole x="0" y="0" drill="2.8"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="2,8" urn="urn:adsk.eagle:package:14271/1" type="box" library_version="1">
+<description>MOUNTING HOLE 2.8 mm with drill center</description>
+</package3d>
+</packages3d>
+</library>
+<library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="JST-2-SMD" urn="urn:adsk.eagle:footprint:37657/1" library_version="1">
+<description>&lt;h3&gt;JST-Right Angle Male Header SMT&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Pin pitch: 2mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”http://www.4uconnector.com/online/object/4udrawing/20404.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
+&lt;li&gt;JST_2MM_MALE&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-4" y1="-1" x2="-4" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-4.5" x2="-3.2" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="-4.5" x2="-3.2" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="-2" x2="-2" y2="-2" width="0.2032" layer="21"/>
+<wire x1="2" y1="-2" x2="3.2" y2="-2" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="-2" x2="3.2" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="-4.5" x2="4" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="4" y1="-4.5" x2="4" y2="-1" width="0.2032" layer="21"/>
+<wire x1="2" y1="3" x2="-2" y2="3" width="0.2032" layer="21"/>
+<smd name="1" x="-1" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="2" x="1" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="NC1" x="-3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="NC2" x="3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<text x="-1.397" y="1.778" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="0.635" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="JST-2-SMD" urn="urn:adsk.eagle:package:38042/1" type="box" library_version="1">
+<description>JST-Right Angle Male Header SMT
+Specifications:
+Pin count: 2
+Pin pitch: 2mm
+
+Datasheet referenced for footprint
+Example device(s):
+CONN_02
+JST_2MM_MALE
+</description>
+</package3d>
+</packages3d>
+</library>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0" drill="0">
+</class>
+</classes>
+<designrules name="default">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+The default Design Rules have been set to cover
+a wide range of applications. Your particular design
+may have different requirements, so please make the
+necessary adjustments and save your customized
+design rules under a new name.</description>
+<param name="layerSetup" value="(1*16)"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="8mil"/>
+<param name="mdWirePad" value="8mil"/>
+<param name="mdWireVia" value="8mil"/>
+<param name="mdPadPad" value="8mil"/>
+<param name="mdPadVia" value="8mil"/>
+<param name="mdViaVia" value="8mil"/>
+<param name="mdSmdPad" value="8mil"/>
+<param name="mdSmdVia" value="8mil"/>
+<param name="mdSmdSmd" value="8mil"/>
+<param name="mdViaViaSameLayer" value="8mil"/>
+<param name="mnLayersViaInSmd" value="2"/>
+<param name="mdCopperDimension" value="40mil"/>
+<param name="mdDrill" value="8mil"/>
+<param name="mdSmdStop" value="0mil"/>
+<param name="msWidth" value="10mil"/>
+<param name="msDrill" value="24mil"/>
+<param name="msMicroVia" value="9.99mm"/>
+<param name="msBlindViaRatio" value="0.5"/>
+<param name="rvPadTop" value="0.25"/>
+<param name="rvPadInner" value="0.25"/>
+<param name="rvPadBottom" value="0.25"/>
+<param name="rvViaOuter" value="0.25"/>
+<param name="rvViaInner" value="0.25"/>
+<param name="rvMicroViaOuter" value="0.25"/>
+<param name="rvMicroViaInner" value="0.25"/>
+<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMaxPadInner" value="20mil"/>
+<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMaxViaOuter" value="20mil"/>
+<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMaxMicroViaOuter" value="20mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMaxMicroViaInner" value="20mil"/>
+<param name="psTop" value="-1"/>
+<param name="psBottom" value="-1"/>
+<param name="psFirst" value="-1"/>
+<param name="psElongationLong" value="100"/>
+<param name="psElongationOffset" value="100"/>
+<param name="mvStopFrame" value="1"/>
+<param name="mvCreamFrame" value="0"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
+<param name="srRoundness" value="0"/>
+<param name="srMinRoundness" value="0mil"/>
+<param name="srMaxRoundness" value="0mil"/>
+<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalsForVias" value="0"/>
+<param name="dpMaxLengthDifference" value="10mm"/>
+<param name="dpGapFactor" value="2.5"/>
+<param name="checkAngle" value="0"/>
+<param name="checkFont" value="1"/>
+<param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="useDiameter" value="13"/>
+<param name="maxErrors" value="50"/>
+</designrules>
+<autorouter>
+<pass name="Default">
+<param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="2"/>
+<param name="TopRouterVariant" value="1"/>
+<param name="tpViaShape" value="round"/>
+<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.2" value="0"/>
+<param name="PrefDir.3" value="0"/>
+<param name="PrefDir.4" value="0"/>
+<param name="PrefDir.5" value="0"/>
+<param name="PrefDir.6" value="0"/>
+<param name="PrefDir.7" value="0"/>
+<param name="PrefDir.8" value="0"/>
+<param name="PrefDir.9" value="0"/>
+<param name="PrefDir.10" value="0"/>
+<param name="PrefDir.11" value="0"/>
+<param name="PrefDir.12" value="0"/>
+<param name="PrefDir.13" value="0"/>
+<param name="PrefDir.14" value="0"/>
+<param name="PrefDir.15" value="0"/>
+<param name="PrefDir.16" value="a"/>
+<param name="cfVia" value="8"/>
+<param name="cfNonPref" value="5"/>
+<param name="cfChangeDir" value="2"/>
+<param name="cfOrthStep" value="2"/>
+<param name="cfDiagStep" value="3"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="1"/>
+<param name="cfMalusStep" value="1"/>
+<param name="cfPadImpact" value="4"/>
+<param name="cfSmdImpact" value="4"/>
+<param name="cfBusImpact" value="0"/>
+<param name="cfHugging" value="3"/>
+<param name="cfAvoid" value="4"/>
+<param name="cfPolygon" value="10"/>
+<param name="cfBase.1" value="0"/>
+<param name="cfBase.2" value="1"/>
+<param name="cfBase.3" value="1"/>
+<param name="cfBase.4" value="1"/>
+<param name="cfBase.5" value="1"/>
+<param name="cfBase.6" value="1"/>
+<param name="cfBase.7" value="1"/>
+<param name="cfBase.8" value="1"/>
+<param name="cfBase.9" value="1"/>
+<param name="cfBase.10" value="1"/>
+<param name="cfBase.11" value="1"/>
+<param name="cfBase.12" value="1"/>
+<param name="cfBase.13" value="1"/>
+<param name="cfBase.14" value="1"/>
+<param name="cfBase.15" value="1"/>
+<param name="cfBase.16" value="0"/>
+<param name="mnVias" value="20"/>
+<param name="mnSegments" value="9999"/>
+<param name="mnExtdSteps" value="9999"/>
+<param name="mnRipupLevel" value="10"/>
+<param name="mnRipupSteps" value="100"/>
+<param name="mnRipupTotal" value="100"/>
+</pass>
+<pass name="Follow-me" refer="Default" active="yes">
+</pass>
+<pass name="Busses" refer="Default" active="yes">
+<param name="cfNonPref" value="4"/>
+<param name="cfBusImpact" value="4"/>
+<param name="cfHugging" value="0"/>
+<param name="mnVias" value="0"/>
+</pass>
+<pass name="Route" refer="Default" active="yes">
+</pass>
+<pass name="Optimize1" refer="Default" active="yes">
+<param name="cfVia" value="99"/>
+<param name="cfExtdStep" value="10"/>
+<param name="cfHugging" value="1"/>
+<param name="mnExtdSteps" value="1"/>
+<param name="mnRipupLevel" value="0"/>
+</pass>
+<pass name="Optimize2" refer="Optimize1" active="yes">
+<param name="cfNonPref" value="0"/>
+<param name="cfChangeDir" value="6"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="2"/>
+<param name="cfMalusStep" value="2"/>
+<param name="cfPadImpact" value="2"/>
+<param name="cfSmdImpact" value="2"/>
+<param name="cfHugging" value="0"/>
+</pass>
+<pass name="Optimize3" refer="Optimize2" active="yes">
+<param name="cfChangeDir" value="8"/>
+<param name="cfPadImpact" value="0"/>
+<param name="cfSmdImpact" value="0"/>
+</pass>
+<pass name="Optimize4" refer="Optimize3" active="yes">
+<param name="cfChangeDir" value="25"/>
+</pass>
+</autorouter>
+<elements>
+<element name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="R0805" value="3R9" x="41.6" y="62.5" smashed="yes" rot="R180"/>
+<element name="PI1" library="RPI-Zero" package="RASPBERRYPI_BASTELSTUBE_V13_RASPI_BOARD_B+_FULL" value="RPI-ZERO" x="0.445" y="88.27" rot="MR180"/>
+<element name="SCREEN1" library="GameboyZeroHandheldDisplays" package="GAMEBOYZEROHANDHELDDISPLAYS-3.2" value="GAMEBOYZEROHANDHELDDISPLAYS-3.2" x="73" y="28" smashed="yes"/>
+<element name="POWER1" library="03962A" package="03962A" value="03962A" x="27" y="56.5" smashed="yes" rot="MR270"/>
+<element name="BTN_X" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_12MM" package3d_urn="urn:adsk.eagle:package:40166/1" value="MOMENTARY-SWITCH-SPST-SMD-12MM" x="136.82985" y="37.2782" smashed="yes" rot="R70">
+<attribute name="PROD_ID" value="SWCH-11967" x="136.82985" y="37.2782" size="1.778" layer="27" rot="R70" display="off"/>
+<attribute name="SF_SKU" value="COM-12993" x="136.82985" y="37.2782" size="1.778" layer="27" rot="R70" display="off"/>
+</element>
+<element name="BTN_Y" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_12MM" package3d_urn="urn:adsk.eagle:package:40166/1" value="MOMENTARY-SWITCH-SPST-SMD-12MM" x="122.328925" y="33.516309375" smashed="yes" rot="R70">
+<attribute name="PROD_ID" value="SWCH-11967" x="120.5914625" y="28.74266875" size="1.778" layer="27" rot="R70" display="off"/>
+<attribute name="SF_SKU" value="COM-12993" x="122.328925" y="33.516309375" size="1.778" layer="27" rot="R70" display="off"/>
+</element>
+<element name="BTN_A" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_12MM" package3d_urn="urn:adsk.eagle:package:40166/1" value="MOMENTARY-SWITCH-SPST-SMD-12MM" x="143.591740625" y="22.777275" smashed="yes" rot="R70">
+<attribute name="PROD_ID" value="SWCH-11967" x="140.116815625" y="13.229996875" size="1.778" layer="27" rot="R70" display="off"/>
+<attribute name="SF_SKU" value="COM-12993" x="143.591740625" y="22.777275" size="1.778" layer="27" rot="R70" display="off"/>
+</element>
+<element name="BTN_B" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_12MM" package3d_urn="urn:adsk.eagle:package:40166/1" value="MOMENTARY-SWITCH-SPST-SMD-12MM" x="129.090815625" y="19.015384375" smashed="yes" rot="R70">
+<attribute name="PROD_ID" value="SWCH-11967" x="123.878428125" y="4.694471875" size="1.778" layer="27" rot="R70" display="off"/>
+<attribute name="SF_SKU" value="COM-12993" x="129.090815625" y="19.015384375" size="1.778" layer="27" rot="R70" display="off"/>
+</element>
+<element name="BTN_START" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_6.0X3.5MM" package3d_urn="urn:adsk.eagle:package:40165/1" value="MOMENTARY-SWITCH-SPST-SMD-6.0X3.5MM" x="23" y="82.5" smashed="yes">
+<attribute name="PROD_ID" value="SWCH-00815" x="2.68" y="82.5" size="1.778" layer="27" display="off"/>
+<attribute name="SF_SKU" value="COM-08229" x="23" y="82.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="BTN_SELECT" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_6.0X3.5MM" package3d_urn="urn:adsk.eagle:package:40165/1" value="MOMENTARY-SWITCH-SPST-SMD-6.0X3.5MM" x="13" y="82.5" smashed="yes">
+<attribute name="PROD_ID" value="SWCH-00815" x="-12.4" y="82.5" size="1.778" layer="27" display="off"/>
+<attribute name="SF_SKU" value="COM-08229" x="13" y="82.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="BTN_L1" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_12MM" package3d_urn="urn:adsk.eagle:package:40166/1" value="MOMENTARY-SWITCH-SPST-SMD-12MM" x="8.5" y="21.093690625" smashed="yes" rot="MR335">
+<attribute name="PROD_ID" value="SWCH-11967" x="8.5" y="21.093690625" size="1.778" layer="28" rot="MR335" display="off"/>
+<attribute name="SF_SKU" value="COM-12993" x="8.5" y="21.093690625" size="1.778" layer="28" rot="MR335" display="off"/>
+</element>
+<element name="BTN_L2" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_12MM" package3d_urn="urn:adsk.eagle:package:40166/1" value="MOMENTARY-SWITCH-SPST-SMD-12MM" x="13.916653125" y="7.311690625" smashed="yes" rot="MR335">
+<attribute name="PROD_ID" value="SWCH-11967" x="13.916653125" y="7.311690625" size="1.778" layer="28" rot="MR335" display="off"/>
+<attribute name="SF_SKU" value="COM-12993" x="13.916653125" y="7.311690625" size="1.778" layer="28" rot="MR335" display="off"/>
+</element>
+<element name="BTN_R1" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_12MM" package3d_urn="urn:adsk.eagle:package:40166/1" value="MOMENTARY-SWITCH-SPST-SMD-12MM" x="147.5" y="21.093690625" smashed="yes" rot="MR205">
+<attribute name="PROD_ID" value="SWCH-11967" x="147.5" y="21.093690625" size="1.778" layer="28" rot="MR205" display="off"/>
+<attribute name="SF_SKU" value="COM-12993" x="147.5" y="21.093690625" size="1.778" layer="28" rot="MR205" display="off"/>
+</element>
+<element name="BTN_R2" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_12MM" package3d_urn="urn:adsk.eagle:package:40166/1" value="MOMENTARY-SWITCH-SPST-SMD-12MM" x="142.08334375" y="7.311690625" smashed="yes" rot="MR205">
+<attribute name="PROD_ID" value="SWCH-11967" x="142.08334375" y="7.311690625" size="1.778" layer="28" rot="MR205" display="off"/>
+<attribute name="SF_SKU" value="COM-12993" x="142.08334375" y="7.311690625" size="1.778" layer="28" rot="MR205" display="off"/>
+</element>
+<element name="R2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="R0805" value="100" x="69" y="74" smashed="yes" rot="MR90"/>
+<element name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="CHIPLED_0805" value="" x="69" y="70" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="71.54" y="71.27" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="S2" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="SWITCH_SPST_SMD_A" package3d_urn="urn:adsk.eagle:package:40179/1" value="" x="68.65" y="81" smashed="yes" rot="MR90">
+<attribute name="PROD_ID" value="SWCH-10651" x="68.65" y="81" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="SF_SKU" value="COM-10860" x="68.65" y="81" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="70.047" y="81" size="0.6096" layer="28" font="vector" ratio="20" rot="MR270" align="top-center"/>
+</element>
+<element name="BTN_UP" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_6.2MM_TALL" package3d_urn="urn:adsk.eagle:package:40172/1" value="MOMENTARY-SWITCH-SPST-SMD-6.2MM-TALL" x="17" y="36.5" smashed="yes" rot="R45">
+<attribute name="PROD_ID" value="SWCH-11966" x="-14.1127" y="50.642134375" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="SF_SKU" value="COM-12992" x="17" y="36.5" size="1.778" layer="27" rot="R45" display="off"/>
+</element>
+<element name="BTN_DOWN" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_6.2MM_TALL" package3d_urn="urn:adsk.eagle:package:40172/1" value="MOMENTARY-SWITCH-SPST-SMD-6.2MM-TALL" x="17" y="23.5" smashed="yes" rot="R225">
+<attribute name="PROD_ID" value="SWCH-11966" x="39.62741875" y="34.813709375" size="1.778" layer="27" rot="R225" display="off"/>
+<attribute name="SF_SKU" value="COM-12992" x="17" y="23.5" size="1.778" layer="27" rot="R225" display="off"/>
+</element>
+<element name="BTN_LEFT" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_6.2MM_TALL" package3d_urn="urn:adsk.eagle:package:40172/1" value="MOMENTARY-SWITCH-SPST-SMD-6.2MM-TALL" x="10" y="30" smashed="yes" rot="R135">
+<attribute name="PROD_ID" value="SWCH-11966" x="24.1421375" y="-6.76955625" size="1.778" layer="27" rot="R135" display="off"/>
+<attribute name="SF_SKU" value="COM-12992" x="10" y="30" size="1.778" layer="27" rot="R135" display="off"/>
+</element>
+<element name="BTN_RIGHT" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_6.2MM_TALL" package3d_urn="urn:adsk.eagle:package:40172/1" value="MOMENTARY-SWITCH-SPST-SMD-6.2MM-TALL" x="24" y="30" smashed="yes" rot="R315">
+<attribute name="PROD_ID" value="SWCH-11966" x="7.0294375" y="80.9116875" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="SF_SKU" value="COM-12992" x="24" y="30" size="1.778" layer="27" rot="R315" display="off"/>
+</element>
+<element name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" package="2,8" package3d_urn="urn:adsk.eagle:package:14271/1" value="MOUNT-HOLE2.8" x="4" y="101"/>
+<element name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="JST-2-SMD" package3d_urn="urn:adsk.eagle:package:38042/1" value="" x="34.654" y="47.902" rot="MR90">
+<attribute name="PROD_ID" value="CONN-11443" x="34.654" y="47.902" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="SF_ID" value="PRT-08612" x="34.654" y="47.902" size="1.778" layer="28" rot="MR90" display="off"/>
+</element>
+</elements>
+<signals>
+<signal name="GND">
+<contactref element="SCREEN1" pad="P$1"/>
+<contactref element="POWER1" pad="OUT-"/>
+<contactref element="SCREEN1" pad="P$8"/>
+<contactref element="SCREEN1" pad="P$14"/>
+<contactref element="BTN_X" pad="1"/>
+<contactref element="BTN_SELECT" pad="1"/>
+<contactref element="BTN_START" pad="1"/>
+<contactref element="BTN_B" pad="1"/>
+<contactref element="BTN_A" pad="1"/>
+<contactref element="BTN_Y" pad="1"/>
+<contactref element="PI1" pad="9"/>
+<contactref element="PI1" pad="25"/>
+<contactref element="PI1" pad="39"/>
+<contactref element="PI1" pad="30"/>
+<contactref element="PI1" pad="14"/>
+<contactref element="PI1" pad="6"/>
+<contactref element="BTN_R2" pad="1"/>
+<contactref element="BTN_R1" pad="1"/>
+<contactref element="BTN_L2" pad="1"/>
+<contactref element="BTN_L1" pad="1"/>
+<contactref element="PI1" pad="34"/>
+<contactref element="LED1" pad="C"/>
+<polygon width="0.254" layer="16">
+<vertex x="0" y="0"/>
+<vertex x="0" y="56"/>
+<vertex x="156" y="56"/>
+<vertex x="156" y="0"/>
+</polygon>
+<polygon width="0.254" layer="1">
+<vertex x="156" y="56"/>
+<vertex x="156" y="0"/>
+<vertex x="0" y="0"/>
+<vertex x="0" y="56"/>
+</polygon>
+<contactref element="BTN_RIGHT" pad="A2"/>
+<contactref element="BTN_LEFT" pad="A2"/>
+<contactref element="BTN_DOWN" pad="A2"/>
+<contactref element="BTN_UP" pad="A2"/>
+<contactref element="SCREEN1" pad="P$13"/>
+<contactref element="SCREEN1" pad="P$12"/>
+<contactref element="SCREEN1" pad="P$11"/>
+<contactref element="PI1" pad="20"/>
+<wire x1="57.087" y1="63.886" x2="69" y2="68.95" width="0" layer="19" extent="16-16"/>
+<wire x1="49.467" y1="59.568" x2="57.087" y2="63.886" width="0" layer="19" extent="16-16"/>
+<wire x1="44.387" y1="59.568" x2="49.467" y2="59.568" width="0" layer="19" extent="16-16"/>
+<wire x1="39.307" y1="63.886" x2="44.387" y2="59.568" width="0" layer="19" extent="16-16"/>
+<wire x1="31.687" y1="59.568" x2="39.307" y2="63.886" width="0" layer="19" extent="16-16"/>
+<wire x1="25.65" y1="55.15" x2="31.687" y2="59.568" width="0" layer="19" extent="16-16"/>
+<wire x1="24.067" y1="59.568" x2="25.65" y2="55.15" width="0" layer="19" extent="16-16"/>
+<wire x1="51" y1="24.4" x2="24.067" y2="59.568" width="0" layer="19" extent="1-16"/>
+<wire x1="51" y1="25.2" x2="51" y2="24.4" width="0" layer="19" extent="1-1"/>
+<wire x1="51" y1="26" x2="51" y2="25.2" width="0" layer="19" extent="1-1"/>
+<wire x1="51" y1="26.8" x2="51" y2="26" width="0" layer="19" extent="1-1"/>
+<wire x1="51" y1="29.2" x2="51" y2="26.8" width="0" layer="19" extent="1-1"/>
+<wire x1="18.987" y1="63.886" x2="51" y2="29.2" width="0" layer="19" extent="1-16"/>
+<wire x1="13.907" y1="59.568" x2="51" y2="24.4" width="0" layer="19" extent="1-16"/>
+<wire x1="51" y1="34.8" x2="51" y2="29.2" width="0" layer="19" extent="1-1"/>
+<wire x1="19.85" y1="82.5" x2="25.65" y2="55.15" width="0" layer="19" extent="1-16"/>
+<wire x1="21.4017375" y1="37.71975625" x2="19.85" y2="82.5" width="0" layer="19" extent="1-1"/>
+<wire x1="3.23505" y1="15.88015625" x2="21.4017375" y2="37.71975625" width="0" layer="19" extent="1-16"/>
+<wire x1="8.780240625" y1="34.4017375" x2="3.23505" y2="15.88015625" width="0" layer="19" extent="1-16"/>
+<wire x1="9.85" y1="82.5" x2="19.85" y2="82.5" width="0" layer="19" extent="1-1"/>
+<wire x1="25.21975625" y1="25.598259375" x2="21.4017375" y2="37.71975625" width="0" layer="19" extent="1-1"/>
+<wire x1="8.651703125" y1="2.09815625" x2="25.21975625" y2="25.598259375" width="0" layer="19" extent="1-16"/>
+<wire x1="12.598259375" y1="22.280240625" x2="8.651703125" y2="2.09815625" width="0" layer="19" extent="1-16"/>
+<wire x1="127.063746875" y1="39.2156125" x2="21.4017375" y2="37.71975625" width="0" layer="19" extent="1-1"/>
+<wire x1="141.564671875" y1="42.977503125" x2="127.063746875" y2="39.2156125" width="0" layer="19" extent="1-1"/>
+<wire x1="154.87804375" y1="20.411696875" x2="141.564671875" y2="42.977503125" width="0" layer="19" extent="1-16"/>
+<wire x1="148.3265625" y1="28.476578125" x2="154.87804375" y2="20.411696875" width="0" layer="19" extent="1-16"/>
+<wire x1="149.4613875" y1="6.629696875" x2="148.3265625" y2="28.476578125" width="0" layer="19" extent="1-16"/>
+<wire x1="133.8256375" y1="24.7146875" x2="149.4613875" y2="6.629696875" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="RESET">
+<contactref element="SCREEN1" pad="P$2"/>
+<contactref element="PI1" pad="22"/>
+<wire x1="51" y1="34" x2="34.227" y2="59.568" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="SCL">
+<contactref element="SCREEN1" pad="P$3"/>
+<contactref element="PI1" pad="23"/>
+<wire x1="51" y1="33.2" x2="36.767" y2="63.886" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="SDI">
+<contactref element="SCREEN1" pad="P$6"/>
+<contactref element="PI1" pad="19"/>
+<wire x1="51" y1="30.8" x2="31.687" y2="63.886" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="SDO">
+<contactref element="SCREEN1" pad="P$7"/>
+<contactref element="PI1" pad="21"/>
+<wire x1="51" y1="30" x2="34.227" y2="63.886" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="3V3100OHM">
+<contactref element="R1" pad="1"/>
+<contactref element="SCREEN1" pad="P$10"/>
+<wire x1="42.6" y1="62.5" x2="51" y2="27.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="D/CX">
+<contactref element="PI1" pad="18"/>
+<contactref element="SCREEN1" pad="P$4"/>
+<wire x1="51" y1="32.4" x2="29.147" y2="59.568" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="CSX">
+<contactref element="SCREEN1" pad="P$5"/>
+<contactref element="PI1" pad="24"/>
+<wire x1="51" y1="31.6" x2="36.767" y2="59.568" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="3V3">
+<contactref element="R1" pad="2"/>
+<contactref element="PI1" pad="1"/>
+<contactref element="PI1" pad="17"/>
+<contactref element="SCREEN1" pad="P$9"/>
+<wire x1="51" y1="28.4" x2="29.147" y2="63.886" width="0" layer="19" extent="1-16"/>
+<wire x1="8.827" y1="63.886" x2="51" y2="28.4" width="0" layer="19" extent="1-16"/>
+<wire x1="40.6" y1="62.5" x2="8.827" y2="63.886" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="SELECT">
+<contactref element="PI1" pad="37"/>
+<contactref element="BTN_SELECT" pad="2"/>
+<wire x1="16.15" y1="82.5" x2="54.547" y2="63.886" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="A">
+<contactref element="PI1" pad="35"/>
+<contactref element="BTN_A" pad="3"/>
+<wire x1="143.628096875" y1="30.18668125" x2="52.007" y2="63.886" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="Y">
+<contactref element="PI1" pad="33"/>
+<contactref element="BTN_Y" pad="3"/>
+<wire x1="122.36528125" y1="40.925715625" x2="49.467" y2="63.886" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="X">
+<contactref element="PI1" pad="31"/>
+<contactref element="BTN_X" pad="3"/>
+<wire x1="136.86620625" y1="44.68760625" x2="46.927" y2="63.886" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="B">
+<contactref element="PI1" pad="29"/>
+<contactref element="BTN_B" pad="3"/>
+<wire x1="129.127171875" y1="26.424790625" x2="44.387" y2="63.886" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="START">
+<contactref element="PI1" pad="36"/>
+<contactref element="BTN_START" pad="2"/>
+<wire x1="26.15" y1="82.5" x2="52.007" y2="59.568" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="RIGHT">
+<contactref element="PI1" pad="38"/>
+<contactref element="BTN_RIGHT" pad="B2"/>
+<wire x1="28.4017375" y1="28.780240625" x2="54.547" y2="59.568" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="LEFT">
+<contactref element="BTN_LEFT" pad="B2"/>
+<contactref element="PI1" pad="15"/>
+<wire x1="5.598259375" y1="31.21975625" x2="26.607" y2="63.886" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="DOWN">
+<contactref element="PI1" pad="32"/>
+<contactref element="BTN_DOWN" pad="B2"/>
+<wire x1="15.780240625" y1="19.098259375" x2="46.927" y2="59.568" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="UP">
+<contactref element="PI1" pad="26"/>
+<contactref element="BTN_UP" pad="B2"/>
+<wire x1="18.21975625" y1="40.9017375" x2="39.307" y2="59.568" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="SWITCH_OUT+">
+<contactref element="PI1" pad="2"/>
+<contactref element="PI1" pad="4"/>
+<contactref element="R2" pad="2"/>
+<contactref element="S2" pad="1"/>
+<wire x1="69" y1="75" x2="66.9" y2="78.75" width="0" layer="19" extent="16-16"/>
+<wire x1="11.367" y1="59.568" x2="66.9" y2="78.75" width="0" layer="19" extent="16-16"/>
+<wire x1="8.827" y1="59.568" x2="11.367" y2="59.568" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="BATT+">
+<contactref element="POWER1" pad="B+"/>
+<contactref element="J1" pad="2"/>
+<wire x1="25.65" y1="44.5" x2="30.954" y2="48.902" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="BATT-">
+<contactref element="POWER1" pad="B-"/>
+<contactref element="J1" pad="1"/>
+<wire x1="30.954" y1="46.902" x2="25.65" y2="51.5" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="SWITCH_IN+">
+<contactref element="S2" pad="2"/>
+<contactref element="POWER1" pad="OUT+"/>
+<wire x1="25.65" y1="40.85" x2="66.9" y2="80.25" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="L1">
+<contactref element="BTN_L1" pad="3"/>
+<contactref element="PI1" pad="12"/>
+<wire x1="1.121959375" y1="20.411696875" x2="21.527" y2="59.568" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="L2">
+<contactref element="BTN_L2" pad="3"/>
+<contactref element="PI1" pad="10"/>
+<wire x1="6.5386125" y1="6.629696875" x2="18.987" y2="59.568" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="R1">
+<contactref element="BTN_R1" pad="3"/>
+<contactref element="PI1" pad="13"/>
+<wire x1="152.764953125" y1="15.88015625" x2="24.067" y2="63.886" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="R2">
+<contactref element="BTN_R2" pad="3"/>
+<contactref element="PI1" pad="11"/>
+<wire x1="147.348296875" y1="2.09815625" x2="21.527" y2="63.886" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="LED">
+<contactref element="LED1" pad="A"/>
+<contactref element="R2" pad="1"/>
+<wire x1="69" y1="71.05" x2="69" y2="73" width="0" layer="19" extent="16-16"/>
+</signal>
+</signals>
+<errors>
+<approved hash="18,29,97b5c6ab38cb6bd5"/>
+<approved hash="18,29,2a0b8b69053b4858"/>
+<approved hash="18,29,00e8367af360580a"/>
+<approved hash="18,29,1e96e878e8751e9b"/>
+<approved hash="18,29,511f1ef11ef2511c"/>
+<approved hash="18,29,75d6bd00bd0475d2"/>
+<approved hash="18,29,044e6398639b044d"/>
+<approved hash="18,29,08580e63a45da266"/>
+<approved hash="18,29,1d703bb94cdd5fc2"/>
+<approved hash="1,20,926a599a56439db3"/>
+<approved hash="1,20,9219e2e9e2a39253"/>
+<approved hash="1,20,cc2534d53014c8e4"/>
+<approved hash="1,20,17e8a718a5df152f"/>
+<approved hash="1,20,dbe8f318f2acda5c"/>
+<approved hash="1,20,fa3a4aca4dc3fd33"/>
+<approved hash="1,20,64225cd251dc692c"/>
+<approved hash="1,20,acd05c205d1badeb"/>
+<approved hash="1,20,4bed331d312449d4"/>
+<approved hash="1,20,06564ea64e9f066f"/>
+<approved hash="1,20,ce6931993e42c1b2"/>
+<approved hash="1,20,c0284fd84ea2c152"/>
+<approved hash="1,20,421672e6722f42df"/>
+<approved hash="1,20,a61a6eea6e23a6d3"/>
+<approved hash="1,20,c88d307d303cc8cc"/>
+<approved hash="1,20,d48c247c243cd4cc"/>
+<approved hash="4,16,45afd8feeb261b54"/>
+<approved hash="4,16,21ad24c28d18a95a"/>
+<approved hash="4,16,60ce1245258d6229"/>
+<approved hash="1,20,d40ce4fce4b8d448"/>
+<approved hash="1,20,9825b0d5b0da982a"/>
+<approved hash="1,20,180dd0fdd0bf184f"/>
+<approved hash="1,20,d78dff7dfebcd64c"/>
+<approved hash="1,20,7ffc4f0c4eb67e46"/>
+<approved hash="1,20,ec1254e2503be8cb"/>
+<approved hash="1,20,d425e4d5e4d2d422"/>
+<approved hash="1,20,d869d099d04ed8be"/>
+<approved hash="1,20,d80dd0fdd0b2d842"/>
+<approved hash="1,20,ac0a5cfa5cbaac4a"/>
+<approved hash="1,20,662c5edc50826872"/>
+<approved hash="1,20,1618a6e8a6df162f"/>
+<approved hash="1,20,983cb0ccb1cc993c"/>
+<approved hash="1,20,d61be6ebe4a0d450"/>
+<approved hash="1,20,58faf00af00258f2"/>
+<approved hash="1,20,2b7c5b8c5c862c76"/>
+<approved hash="1,20,e65fdeafdeade65d"/>
+<approved hash="1,20,d825f0d5f0d4d824"/>
+<approved hash="1,20,880c70fc70bb884b"/>
+<approved hash="1,20,e83e50ce51c6e936"/>
+<approved hash="1,20,6a18d2e8d0a06850"/>
+<approved hash="1,20,0c10f4e0f03f08cf"/>
+<approved hash="1,20,1b68f318f2201a50"/>
+<approved hash="1,20,785248a24aa37a53"/>
+<approved hash="1,20,ff764f864e8ffe7f"/>
+<approved hash="1,20,e825d0d5d0d6e826"/>
+<approved hash="1,20,ea38dac8a53f95cf"/>
+<approved hash="1,20,006d898d95771c97"/>
+<approved hash="1,20,91fc981c973b9edb"/>
+<approved hash="1,20,17fde51dea2518c5"/>
+<approved hash="4,16,be4cf1e5a0bc3cf5"/>
+<approved hash="4,16,724b45d20e880ef2"/>
+<approved hash="4,16,bd0a2b1a983455c0"/>
+<approved hash="1,20,837a6b0a6c038473"/>
+<approved hash="1,20,d822d052d490dce0"/>
+<approved hash="1,20,d672fe02fc42d432"/>
+<approved hash="4,1,a95a647b511f1fbd"/>
+<approved hash="4,1,f4f9d0f0e12657bd"/>
+<approved hash="1,20,88186ce86c2588d5"/>
+<approved hash="1,20,a7f9af09d10ed9fe"/>
+<approved hash="1,20,89f86d086f1d8bed"/>
+<approved hash="1,20,f865c895cd56fda6"/>
+<approved hash="1,20,40b8c1d8c22a434a"/>
+<approved hash="1,20,10be91de922c134c"/>
+<approved hash="19,16,5bfe4d9cebdd9ce4"/>
+<approved hash="19,16,0aa104d5aeefa2a2"/>
+<approved hash="19,16,838180ca12f11383"/>
+<approved hash="19,16,eea1c1a5a9b92ea0"/>
+<approved hash="19,16,3aa799fa6835b300"/>
+<approved hash="19,16,9bfe259dcbce3be3"/>
+<approved hash="19,16,69b591c02bf2cdbf"/>
+<approved hash="19,16,ec9405de87ec709e"/>
+<approved hash="19,16,79eb72a1fc98f9e9"/>
+<approved hash="19,16,e0caeabf5c8558cb"/>
+<approved hash="19,16,b7dd67a8e18ac3c7"/>
+<approved hash="19,16,e2fccfb67194aee6"/>
+<approved hash="19,16,c4d9069477163b92"/>
+<approved hash="19,16,8ed340a60a9c06d1"/>
+<approved hash="19,16,27f224b8568297f0"/>
+<approved hash="19,16,28b3c94d2ccca6c7"/>
+<approved hash="19,16,88b2478a925b9210"/>
+<approved hash="19,16,d831a3a7b57b6767"/>
+<approved hash="19,16,0de73d9397a1a1ec"/>
+<approved hash="19,16,80c7b98c2bbf14cd"/>
+<approved hash="19,16,d82fbb72a553667c"/>
+<approved hash="19,16,fe38f3aee572536e"/>
+<approved hash="19,16,64fb968e38b4ccf9"/>
+<approved hash="19,16,edda169080aa7dd8"/>
+<approved hash="19,16,db08937d5dbf57f5"/>
+<approved hash="19,16,7629736385a6c2d3"/>
+<approved hash="19,16,83c743dc82aa978e"/>
+<approved hash="19,16,db3ac8707a52ab20"/>
+<approved hash="19,16,b21b6c6ee64cfa01"/>
+<approved hash="19,16,120661fee836d3a0"/>
+<approved hash="19,16,24302d7aaf40a832"/>
+<approved hash="19,16,b111b964035e0513"/>
+<approved hash="19,16,c9b1b1ec29001925"/>
+<approved hash="19,16,f1c067dc82adb3a1"/>
+<approved hash="19,16,9105ba4e247d110f"/>
+<approved hash="19,16,082532519463b02e"/>
+<approved hash="19,16,708338ee7b0e8f16"/>
+<approved hash="19,16,5ec16ddc82acb1b4"/>
+<approved hash="19,16,9f398f4c39753b38"/>
+<approved hash="19,16,1a181752996b8619"/>
+<approved hash="19,16,7b989fe969005d0b"/>
+<approved hash="19,16,7f6f6c259e64cf15"/>
+<approved hash="19,16,d64e883b42795e37"/>
+<approved hash="19,16,05f45402375d02a6"/>
+<approved hash="19,16,d860c12a7310ac62"/>
+<approved hash="19,16,b5416534ef0ef943"/>
+<approved hash="19,16,25765e3cc80eb57c"/>
+<approved hash="19,16,ac57de227010045d"/>
+<approved hash="19,16,69919ab8c63c5168"/>
+<approved hash="19,16,8e4bbb002d3b1a49"/>
+<approved hash="19,16,036b3b1f9525af68"/>
+<approved hash="19,16,f2a8e7b1623bd750"/>
+<approved hash="19,16,c6ab857aa15b42f8"/>
+<approved hash="19,16,fa7fb40a3e2f3262"/>
+<approved hash="19,16,135e1014a231e343"/>
+<approved hash="19,16,2fb8d0b5123dc141"/>
+<approved hash="19,16,d88c80f97b3c5d71"/>
+<approved hash="19,16,7dad54e79722c050"/>
+<approved hash="19,16,d0b41db72e3f434c"/>
+<approved hash="19,16,3cb7a77e355d0ee4"/>
+<approved hash="19,16,518f5bfaedc0e982"/>
+<approved hash="19,16,c8aec3e44dd148ac"/>
+<approved hash="19,16,e640e27f175dff12"/>
+<approved hash="19,16,de6ccf8edf297c4f"/>
+<approved hash="19,16,a695d6e070d2129f"/>
+<approved hash="19,16,33b45efec0ccbfbe"/>
+<approved hash="19,16,b35de97dc95ee30f"/>
+<approved hash="1,20,fae9ca19cd42fdb2"/>
+<approved hash="1,20,880e607e623f8a4f"/>
+<approved hash="19,16,b936f57fdfa5d1eb"/>
+<approved hash="19,16,0b8bf7c2a9e84ba1"/>
+<approved hash="19,16,82f48cbdde9fded5"/>
+<approved hash="19,16,d5e301aa639045d9"/>
+<approved hash="19,16,2bc10dba6f80bbfb"/>
+<approved hash="19,16,bf14b16f9bb2d7ce"/>
+<approved hash="19,16,d77f03366d147f5d"/>
+<approved hash="19,16,115d03266d04b97f"/>
+<approved hash="19,16,fa899cf2ded8aaa3"/>
+<approved hash="1,20,da0d527d52b0dac0"/>
+<approved hash="1,20,1a0cd2fcd23c1acc"/>
+<approved hash="1,20,961866e864a39453"/>
+<approved hash="1,20,961a66ea64a39453"/>
+<approved hash="1,20,dd06f576f27eda0e"/>
+<approved hash="1,20,de1ed66ed6a4ded4"/>
+<approved hash="1,20,0c19f4e9f2a30a53"/>
+<approved hash="1,20,c018486848a0c0d0"/>
+<approved hash="1,20,c226f2d6cdd6fd26"/>
+<approved hash="1,20,ca6432943156c9a6"/>
+<approved hash="1,20,881a78ea642394d3"/>
+<approved hash="1,20,7a8cca7cca3c7acc"/>
+<approved hash="1,20,d4395cc952c0da30"/>
+<approved hash="1,20,95f65406563e97ce"/>
+<approved hash="1,20,4d7ccc1ccdf64c96"/>
+<approved hash="1,20,1d7a9c1a9df01c90"/>
+<approved hash="1,20,d57a518a5082d472"/>
+<approved hash="1,20,7a264ad64d2f7ddf"/>
+<approved hash="1,20,9c2a745a72039a73"/>
+<approved hash="1,20,3a19c269fda705d7"/>
+<approved hash="1,20,d8d6d026d17cd98c"/>
+<approved hash="1,20,98ea501a502398d3"/>
+<approved hash="1,20,da1a5eea5ea2da52"/>
+<approved hash="1,20,ca1a32ea322ccadc"/>
+<approved hash="1,20,ec1ad4ead2a2ea52"/>
+<approved hash="1,20,ae625e925d52ada2"/>
+<approved hash="1,20,db79f389f280da70"/>
+<approved hash="1,20,1eeeb61eb14719b7"/>
+<approved hash="1,20,de1926693aacc2dc"/>
+<approved hash="4,16,56893166a93fc51d"/>
+<approved hash="4,16,531d2518b469cf6d"/>
+<approved hash="4,16,a619d1cbbeb1c096"/>
+</errors>
+</board>
+</drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
+</eagle>
