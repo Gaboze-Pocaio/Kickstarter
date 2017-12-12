@@ -309,21 +309,21 @@ You can replace the entire file with the following
 
 ```shell
 # Here's a pin configuration for the PiGRRL 2 project:
-LEFT      22  # Joypad left
-RIGHT     20  # Joypad right
-UP         7  # Joypad up
-DOWN      12  # Joypad down
-LEFTCTRL  19  # 'A' button
-LEFTALT    5  # 'B' button
-Z          6  # 'X' button
-X         13  # 'Y' button
-SPACE     26  # 'Select' button
-ENTER     16  # 'Start' button
-A         18  # Left shoulder button
-S         27  # Right shoulder button
-Q         15  # Left trigger button
-W         17  # Right trigger button
-ESC       16 26  # Exit ROM; PiTFT Button 1
+LEFT      		22  # Joypad left
+RIGHT     		20  # Joypad right
+UP         		 7  # Joypad up
+DOWN      		12  # Joypad down
+LEFTCTRL  		19  # 'A' button
+LEFTALT    		 5  # 'B' button
+Z          		 6  # 'X' button
+X         		13  # 'Y' button
+RIGHTSHIFT      26  # 'Select' button
+ENTER     		16  # 'Start' button
+A         		18  # Left shoulder button
+S         		27  # Right shoulder button
+Q         		15  # Left trigger button
+W         		17  # Right trigger button
+ESC       		16 26  # Exit ROM; PiTFT Button 1
 ```
 
 *Hit 'CTRL+X' and 'Y' to confirm the save*
@@ -339,6 +339,7 @@ sudo nano ~/.emulationstation/es_input.cfg
 Ensure that your file's content are **exactly** as below
 ```xml
 <?xml version="1.0"?>
+<?xml version="1.0"?>
 <inputList>
   <inputAction type="onfinish">
     <command>/opt/retropie/supplementary/emulationstation/scripts/inputconfiguration.sh</command>
@@ -353,9 +354,9 @@ Ensure that your file's content are **exactly** as below
     <input name="pagedown" type="key" id="115" value="1"/>
     <input name="right" type="key" id="1073741903" value="1"/>
     <input name="x" type="key" id="122" value="1"/>
-    <input name="select" type="key" id="32" value="1"/>
+    <input name="select" type="key" id="1073742053" value="1"/>
     <input name="y" type="key" id="120" value="1"/>
-    <input name="left" type="key" id="1073741904" value="1"/>  
+    <input name="left" type="key" id="1073741904" value="1"/>
   </inputConfig>
 </inputList>
 ```
