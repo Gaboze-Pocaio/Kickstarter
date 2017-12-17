@@ -1,4 +1,4 @@
-# Gameboy Zero Installation
+# Gameboy Zero - Pocket Installation
 
 > This document is intended for a somewhat advanced user base, but we have made it simple enough to follow along for anyone
 
@@ -100,7 +100,7 @@ From you computer *(not the Raspberry Pi)*
 
 Enter the following to add a Loadable Kernel Module for the TFT Device
 ```shell
-sudo modprobe fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24 speed=80000000 fps=60 bgr=1 rotate=90
+sudo modprobe fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24 speed=80000000 fps=60 bgr=1 rotate=270
 ```
 
 Confirm the module has been loaded
@@ -167,7 +167,7 @@ sudo nano /etc/modprobe.d/fbtft.conf
 
 Add this line to the empty file
 ```shell
-options fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24 speed=80000000 fps=60 bgr=1 rotate=90 custom=1
+options fbtft_device custom name=fb_ili9341 gpios=reset:25,dc:24 speed=80000000 fps=60 bgr=1 rotate=270 custom=1
 ```
 
 *Hit 'CTRL+X' and 'Y' to confirm the save*
