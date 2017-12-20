@@ -30,21 +30,6 @@ Once the Raspberry Pi boots into RetroPie, it will start EmulationStation automa
 You will see a screen telling you to either set up a controller or press F4 to exit.
 
 * Press F4 to exit to terminal
-* Run the Rapsberry Pi configuration program
-```shell
-sudo raspi-config
-```
-In the Interfaceing Options menu, you will need to 
-1. Enable SSH
-2. Enable SPI
-
-In the Advance Options menu, you will need to
-1. Expand Filesystem
-2. Disable Overscan
-
-Once these are complete, you will be asked to reboot you Raspbery Pi.
-Do so.
-
 
 
 ### WiFi
@@ -85,6 +70,22 @@ ssh pi@[ip address]
 ```
 
 
+### Config
+
+* Run the Rapsberry Pi configuration program
+```shell
+sudo raspi-config
+```
+In the Interfaceing Options menu, you will need to 
+1. Enable SSH
+2. Enable SPI
+
+In the Advance Options menu, you will need to
+1. Expand Filesystem
+2. Disable Overscan
+
+Once these are complete, you will be asked to reboot you Raspbery Pi.
+Do so.
 
 
 
@@ -338,7 +339,6 @@ sudo nano ~/.emulationstation/es_input.cfg
 
 Ensure that your file's content are **exactly** as below
 ```xml
-<?xml version="1.0"?>
 <?xml version="1.0"?>
 <inputList>
   <inputAction type="onfinish">
