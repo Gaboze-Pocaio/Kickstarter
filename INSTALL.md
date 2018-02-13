@@ -1,4 +1,4 @@
-# Gameboy Zero - handheld Edition Installation
+# Gameboy Zero - Handheld Edition Installation
 
 > This document is intended for a somewhat advanced user base, but we have made it simple enough to follow along for anyone
 
