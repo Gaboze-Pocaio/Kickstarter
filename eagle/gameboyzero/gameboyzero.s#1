@@ -4730,34 +4730,34 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </library>
 <library name="GameboyZeroHandheldDisplays">
 <packages>
-<package name="GAMEBOYZEROHANDHELDDISPLAYS-2.8">
+<package name="GAMEBOYZEROHANDHELDDISPLAYS-3.2">
 <description>Gameboy Zero Handheld Displays - 2.8 Inch connector for ili9341 screens with SPI interface</description>
-<smd name="P$9" x="-18" y="0.4" dx="4" dy="0.4" layer="1"/>
-<smd name="P$10" x="-18" y="-0.4" dx="4" dy="0.4" layer="1"/>
-<smd name="P$8" x="-18" y="1.2" dx="4" dy="0.4" layer="1"/>
-<smd name="P$7" x="-18" y="2" dx="4" dy="0.4" layer="1"/>
-<smd name="P$6" x="-18" y="2.8" dx="4" dy="0.4" layer="1"/>
-<smd name="P$5" x="-18" y="3.6" dx="4" dy="0.4" layer="1"/>
-<smd name="P$4" x="-18" y="4.4" dx="4" dy="0.4" layer="1"/>
-<smd name="P$3" x="-18" y="5.2" dx="4" dy="0.4" layer="1"/>
-<smd name="P$11" x="-18" y="-1.2" dx="4" dy="0.4" layer="1"/>
-<smd name="P$12" x="-18" y="-2" dx="4" dy="0.4" layer="1"/>
-<smd name="P$13" x="-18" y="-2.8" dx="4" dy="0.4" layer="1"/>
-<smd name="P$14" x="-18" y="-3.6" dx="4" dy="0.4" layer="1"/>
-<smd name="P$15" x="-18" y="-4.4" dx="4" dy="0.4" layer="1"/>
-<smd name="P$16" x="-18" y="-5.2" dx="4" dy="0.4" layer="1"/>
-<text x="-10" y="6" size="1.27" layer="25">&gt;name</text>
-<text x="-10" y="-3.2" size="1.27" layer="27">&gt;value</text>
-<smd name="P$2" x="-18" y="6" dx="4" dy="0.4" layer="1"/>
-<smd name="P$1" x="-18" y="6.8" dx="4" dy="0.4" layer="1"/>
-<smd name="P$17" x="-18" y="-6" dx="4" dy="0.4" layer="1"/>
-<smd name="P$18" x="-18" y="-6.8" dx="4" dy="0.4" layer="1"/>
-<text x="-18" y="9.4" size="1.27" layer="21">1</text>
-<text x="-18" y="-10" size="1.27" layer="21">18</text>
-<wire x1="-34.6" y1="25" x2="34.6" y2="25" width="0.127" layer="21"/>
-<wire x1="34.6" y1="25" x2="34.6" y2="-25" width="0.127" layer="21"/>
-<wire x1="34.6" y1="-25" x2="-34.6" y2="-25" width="0.127" layer="21"/>
-<wire x1="-34.6" y1="-25" x2="-34.6" y2="25" width="0.127" layer="21"/>
+<smd name="P$9" x="-22" y="0.4" dx="4" dy="0.4" layer="1"/>
+<smd name="P$10" x="-22" y="-0.4" dx="4" dy="0.4" layer="1"/>
+<smd name="P$8" x="-22" y="1.2" dx="4" dy="0.4" layer="1"/>
+<smd name="P$7" x="-22" y="2" dx="4" dy="0.4" layer="1"/>
+<smd name="P$6" x="-22" y="2.8" dx="4" dy="0.4" layer="1"/>
+<smd name="P$5" x="-22" y="3.6" dx="4" dy="0.4" layer="1"/>
+<smd name="P$4" x="-22" y="4.4" dx="4" dy="0.4" layer="1"/>
+<smd name="P$3" x="-22" y="5.2" dx="4" dy="0.4" layer="1"/>
+<smd name="P$11" x="-22" y="-1.2" dx="4" dy="0.4" layer="1"/>
+<smd name="P$12" x="-22" y="-2" dx="4" dy="0.4" layer="1"/>
+<smd name="P$13" x="-22" y="-2.8" dx="4" dy="0.4" layer="1"/>
+<smd name="P$14" x="-22" y="-3.6" dx="4" dy="0.4" layer="1"/>
+<smd name="P$15" x="-22" y="-4.4" dx="4" dy="0.4" layer="1"/>
+<smd name="P$16" x="-22" y="-5.2" dx="4" dy="0.4" layer="1"/>
+<text x="-14" y="6" size="1.27" layer="25">&gt;name</text>
+<text x="-14" y="-5.74" size="1.27" layer="27">&gt;value</text>
+<smd name="P$2" x="-22" y="6" dx="4" dy="0.4" layer="1"/>
+<smd name="P$1" x="-22" y="6.8" dx="4" dy="0.4" layer="1"/>
+<smd name="P$17" x="-22" y="-6" dx="4" dy="0.4" layer="1"/>
+<smd name="P$18" x="-22" y="-6.8" dx="4" dy="0.4" layer="1"/>
+<text x="-22" y="9.4" size="1.27" layer="21">1</text>
+<text x="-22" y="-10" size="1.27" layer="21">18</text>
+<wire x1="-38.7" y1="27" x2="38.7" y2="27" width="0.127" layer="21"/>
+<wire x1="38.7" y1="27" x2="38.7" y2="-27" width="0.127" layer="21"/>
+<wire x1="38.7" y1="-27" x2="-38.7" y2="-27" width="0.127" layer="21"/>
+<wire x1="-38.7" y1="-27" x2="-38.7" y2="27" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -4787,12 +4787,12 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GAMEBOYZEROHANDHELDDISPLAYS-2.8">
+<deviceset name="GAMEBOYZEROHANDHELDDISPLAYS-3.2">
 <gates>
 <gate name="G$1" symbol="GAMEBOYZEROHANDHELDDISPLAYS-2.8" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="GAMEBOYZEROHANDHELDDISPLAYS-2.8">
+<device name="" package="GAMEBOYZEROHANDHELDDISPLAYS-3.2">
 <connects>
 <connect gate="G$1" pin="CSX" pad="P$5"/>
 <connect gate="G$1" pin="D/CX" pad="P$4"/>
@@ -4809,9 +4809,9 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connect gate="G$1" pin="SDO" pad="P$7"/>
 <connect gate="G$1" pin="VCC" pad="P$9"/>
 <connect gate="G$1" pin="XL" pad="P$15"/>
-<connect gate="G$1" pin="XR" pad="P$17"/>
-<connect gate="G$1" pin="YD" pad="P$18"/>
-<connect gate="G$1" pin="YU" pad="P$16"/>
+<connect gate="G$1" pin="XR" pad="P$16"/>
+<connect gate="G$1" pin="YD" pad="P$17"/>
+<connect gate="G$1" pin="YU" pad="P$18"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5253,7 +5253,7 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <parts>
 <part name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0805" value="3R9"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="SCREEN1" library="GameboyZeroHandheldDisplays" deviceset="GAMEBOYZEROHANDHELDDISPLAYS-2.8" device=""/>
+<part name="SCREEN1" library="GameboyZeroHandheldDisplays" deviceset="GAMEBOYZEROHANDHELDDISPLAYS-3.2" device=""/>
 <part name="PI1" library="RPI-Zero" deviceset="RPI-ZERO" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="POWER1" library="03962A" deviceset="03962A" device=""/>
